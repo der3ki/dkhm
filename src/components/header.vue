@@ -24,7 +24,20 @@
                 </nav>
             </div>
       </template>
-      <template v-else>desktop</template>
+      <template v-else>
+            <div class="container">
+                <router-link to="/home">
+                    <img src="../assets/logo.png" alt="DKHM"/>
+                </router-link>
+                <nav>
+                    <ul>
+                        <li v-for="(category,index) in categories" :key="index" @click="clickCategory()">
+                            <router-link :to="category.url">{{category.name}}</router-link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+      </template>
   </header>
 </template>
 
