@@ -19,7 +19,7 @@ const routes = [
     { path: '/factions', name: 'Factions', component: Factions },
     { path: '/background', name: 'Background', component: Background },
     { path: '/team', name: 'Team', component: Team },
-    { path: '/Sponsors', name: 'Sponsors', component: Sponsors },
+    { path: '/sponsors', name: 'Sponsors', component: Sponsors },
     { path: '*', component: NotFoundComponent }
 ]
 
