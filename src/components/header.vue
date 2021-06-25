@@ -24,7 +24,7 @@
                 </nav>
             </div>
       </template>
-      <div v-else>desktop</div>
+      <template v-else>desktop</template>
   </header>
 </template>
 
@@ -138,6 +138,8 @@ header > input{
     text-transform: uppercase;
     text-align: right;
     font: 500 18px/24px  'Roboto', sans-serif;
+    border-bottom: 1px solid rgba(0, 17, 27, 0.2);
+    cursor:pointer;
 }
 .categories > li > label{
     width:30px;
