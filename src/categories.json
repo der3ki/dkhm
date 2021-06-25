@@ -1,0 +1,46 @@
+{
+    "categories":[
+        {
+            "name":"home",
+            "url": "/home",
+            "img":"",
+            "title":"this is home",
+            "description":"this is the description of home"
+        },
+        {
+            "name":"news",
+            "url": "/news",
+            "img":"",
+            "title":"this is news",
+            "description":"this is the description of news"
+        },
+        {
+            "name":"factions",
+            "url": "/factions",
+            "img":"",
+            "title":"this is factions",
+            "description":"this is the description of factions"
+        },
+        {
+            "name":"background",
+            "url": "/background",
+            "img":"",
+            "title":"this is background",
+            "description":"this is the description of background"
+        },
+        {
+            "name":"team",
+            "url": "/team",
+            "img":"",
+            "title":"this is team",
+            "description":"this is the description of team"
+        },
+        {
+            "name":"sponsors",
+            "url": "/sponsors",
+            "img":"",
+            "title":"this is sponsors",
+            "description":"this is the description of sponsors"
+        }
+    ]
+}
