@@ -30,9 +30,11 @@
                     <img src="../assets/logo.png" alt="DKHM"/>
                 </router-link>
                 <nav>
-                    <ul>
+                    <ul class="categories">
                         <li v-for="(category,index) in categories" :key="index" @click="clickCategory()">
-                            <router-link :to="category.url">{{category.name}}</router-link>
+                            <router-link :to="category.url">
+                                <span>{{category.name}}</span>
+                            </router-link>
                         </li>
                     </ul>
                 </nav>
@@ -47,12 +49,12 @@ export default {
     name: 'Header',
     data(){
         return{
-            categories: categories.categories
+            categories: categories.categories,
         }
     },
     methods:{
        clickCategory(){
-           document.getElementById('header_dkhm_mobile').click()
+           this.$isMobile() ? document.getElementById('header_dkhm_mobile').click() : '' 
        }
     }
 }
@@ -161,6 +163,30 @@ header > input{
 .categories > li > a{
     color: #408f1f;
     text-decoration: none;
+}
+@media (min-width:768px){
+    .categories{
+        position: initial;
+        left:initial;
+        top:initial;
+        right: initial;
+        bottom:initial;
+        background:initial;
+        width: auto;
+        box-shadow: none;
+        overflow: initial;
+        flex-direction: row;
+
+    }
+    .categories > li{
+        padding:25px 0 15px;
+    }
+    .categories > li > a{
+        color:#999;
+        position:relative;
+        transition: .3s all ease-in;
+    }
+    
 }
 
 </style>

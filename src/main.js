@@ -3,10 +3,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import VueMobileDetection from 'vue-mobile-detection'
+import Carousel3d from 'vue-carousel-3d';
 
 Vue.config.productionTip = false
 
-Vue.use(VueMobileDetection)
+Vue.use(VueMobileDetection,Carousel3d)
 new Vue({
   router,
   store,
