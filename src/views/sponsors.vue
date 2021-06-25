@@ -1,13 +1,13 @@
 <template>
-  <div id="app">
-   <router-view></router-view>
+  <div>
+    this is Sponsors
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'App',
+  name: 'Sponsors',
   components: {
   }
 }
