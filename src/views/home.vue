@@ -19,6 +19,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+  section{
+    background-image:url('../assets/background-home.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 </style>

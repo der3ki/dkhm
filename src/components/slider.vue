@@ -1,27 +1,25 @@
 <template>
-  <div>
-    <div class="slider">
-        <template v-if="$isMobile()">
-        <carousel-3d :autoplay="true" :autoplayTimeout="5000" :width="280" :height="250" :border="3" :controlsVisible="true"> 
-        <slide v-for="(category, index) in categories" :key="index" :index="index">
-            <div class="slider_element" :style="{backgroundImage: 'url('+category.img_desktop+')'}">
-                <p>{{category.title}}</p>
-                <router-link :to="category.url">Ver más</router-link>
-            </div>
-        </slide>
-        </carousel-3d>
-        </template>
-        <template v-else>
-        <carousel-3d :autoplay="true" :autoplayTimeout="5000" :width="600" :height="450" :border="3" :controlsVisible="true" :clickable="false">
-            <slide v-for="(category, index) in categories" :key="index" :index="index">
-                <div class="slider_element" :style="{backgroundImage: 'url('+category.img_desktop+')'}">
-                    <p>{{category.title}}</p>
-                    <router-link :to="category.url">Ver más</router-link>
-                </div>
-            </slide>
-        </carousel-3d>
-        </template>
-    </div>
+  <div class="slider">
+      <template v-if="$isMobile()">
+      <carousel-3d :autoplay="true" :autoplayTimeout="5000" :width="280" :height="250" :border="3" :controlsVisible="true"> 
+      <slide v-for="(category, index) in categories" :key="index" :index="index">
+          <div class="slider_element" :style="{backgroundImage: 'url('+category.img_desktop+')'}">
+              <p>{{category.title}}</p>
+              <router-link :to="category.url">Ver más</router-link>
+          </div>
+      </slide>
+      </carousel-3d>
+      </template>
+      <template v-else>
+      <carousel-3d :autoplay="true" :autoplayTimeout="5000" :width="600" :height="450" :border="3" :controlsVisible="true" :clickable="false">
+          <slide v-for="(category, index) in categories" :key="index" :index="index">
+              <div class="slider_element" :style="{backgroundImage: 'url('+category.img_desktop+')'}">
+                  <p>{{category.title}}</p>
+                  <router-link :to="category.url">Ver más</router-link>
+              </div>
+          </slide>
+      </carousel-3d>
+      </template>
   </div>
 </template>
 
@@ -44,7 +42,11 @@ export default {
 
 <style scoped>
     .slider{
-        margin:50px 0;
+        margin:0 0;
+        padding: 50px 0;
+    }
+    .slider >>> .carousel-3d-container{
+      margin:0;
     }
     .slider >>> .slider_element{
         background-size: cover;
