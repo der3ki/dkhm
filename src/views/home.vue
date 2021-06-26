@@ -2,23 +2,26 @@
   <section>
     <Slider></Slider>
     <aboutDkhm></aboutDkhm>
+    <latestNews></latestNews>
   </section>
 </template>
 
 <script>
 import Slider from '../components/slider.vue';
 import aboutDkhm from '../components/aboutdkhm.vue';
+import latestNews from '../components/latestNews.vue';
 export default {
   name: 'Home',
   components: {
     Slider,
-    aboutDkhm
+    aboutDkhm,
+    latestNews
   },
   data(){
     return{
-      
+      news: []
     }
-  }
+  },
 }
 </script>
 
