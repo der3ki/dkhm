@@ -16,6 +16,11 @@
                                 <span>Cerrar</span>
                             </label>
                         </li>
+                         <li @click="clickCategory()">
+                            <router-link to="/home">
+                                Home
+                            </router-link>
+                        </li>
                         <li v-for="(category,index) in categories" :key="index" @click="clickCategory()">
                             <router-link :to="category.url">{{category.name}}</router-link>
                         </li>
@@ -31,6 +36,11 @@
                 </router-link>
                 <nav>
                     <ul class="categories">
+                        <li @click="clickCategory()">
+                            <router-link to="/home">
+                                Home
+                            </router-link>
+                        </li>
                         <li v-for="(category,index) in categories" :key="index" @click="clickCategory()">
                             <router-link :to="category.url">
                                 <span>{{category.name}}</span>

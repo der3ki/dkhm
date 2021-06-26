@@ -1,32 +1,20 @@
 <template>
-  <div>
-    <carousel-3d>
-      <slide :index="0">
-        Slide 1 Content
-      </slide>
-      <slide :index="1">
-        Slide 2 Content
-      </slide>
-       <slide :index="2">
-        Slide 2 Content
-      </slide>
-       <slide :index="3">
-        Slide 2 Content
-      </slide>
-       <slide :index="4">
-        Slide 2 Content
-      </slide>
-  </carousel-3d>
-  </div>
+  <section>
+    <Slider></Slider>
+  </section>
 </template>
 
 <script>
-import { Carousel3d, Slide } from 'vue-carousel-3d';
+import Slider from '../components/slider.vue';
 export default {
   name: 'Home',
   components: {
-    Carousel3d,
-    Slide
+    Slider
+  },
+  data(){
+    return{
+      
+    }
   }
 }
 </script>
