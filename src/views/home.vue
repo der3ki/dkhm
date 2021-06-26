@@ -1,15 +1,18 @@
 <template>
   <section>
     <Slider></Slider>
+    <aboutDkhm></aboutDkhm>
   </section>
 </template>
 
 <script>
 import Slider from '../components/slider.vue';
+import aboutDkhm from '../components/aboutdkhm.vue';
 export default {
   name: 'Home',
   components: {
-    Slider
+    Slider,
+    aboutDkhm
   },
   data(){
     return{

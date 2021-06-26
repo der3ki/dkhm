@@ -44,6 +44,8 @@ export default {
     .slider{
         margin:0 0;
         padding: 50px 0;
+        max-width: 1055px;
+        margin:0 auto;
     }
     .slider >>> .carousel-3d-container{
       margin:0;
