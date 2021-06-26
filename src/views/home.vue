@@ -1,36 +1,32 @@
 <template>
-  <div>
-    <carousel-3d>
-      <slide :index="0">
-        Slide 1 Content
-      </slide>
-      <slide :index="1">
-        Slide 2 Content
-      </slide>
-       <slide :index="2">
-        Slide 2 Content
-      </slide>
-       <slide :index="3">
-        Slide 2 Content
-      </slide>
-       <slide :index="4">
-        Slide 2 Content
-      </slide>
-  </carousel-3d>
-  </div>
+  <section>
+    <Slider></Slider>
+    <aboutDkhm></aboutDkhm>
+  </section>
 </template>
 
 <script>
-import { Carousel3d, Slide } from 'vue-carousel-3d';
+import Slider from '../components/slider.vue';
+import aboutDkhm from '../components/aboutdkhm.vue';
 export default {
   name: 'Home',
   components: {
-    Carousel3d,
-    Slide
+    Slider,
+    aboutDkhm
+  },
+  data(){
+    return{
+      
+    }
   }
 }
 </script>
 
-<style>
-
+<style scoped>
+  section{
+    background-image:url('../assets/background-home.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 </style>
