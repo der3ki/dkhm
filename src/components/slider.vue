@@ -76,4 +76,7 @@ export default {
         border-radius: 5px;
         font-size: 14px;
     }
+    .slider >>> .next , .slider >>> .prev{
+      color:#fff;
+    }
 </style>
