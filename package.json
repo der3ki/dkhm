@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "start":"vue-cli-service serve",
+    "start": "node server.js",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
     "vue": "^2.6.11",
     "vue-carousel-3d": "^1.0.1",
     "vue-mobile-detection": "^1.0.0",
