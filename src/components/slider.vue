@@ -1,6 +1,6 @@
 <template>
   <div class="slider">
-      <template v-if="$isMobile()">
+      <template>
       <carousel-3d :autoplay="true" :autoplayTimeout="5000" :width="280" :height="250" :border="3" :controlsVisible="true"> 
       <slide v-for="(category, index) in categories" :key="index" :index="index">
           <div class="slider_element" :style="{backgroundImage: 'url('+category.img_desktop+')'}">
@@ -10,7 +10,7 @@
       </slide>
       </carousel-3d>
       </template>
-      <template v-else>
+      <template>
       <carousel-3d :autoplay="true" :autoplayTimeout="5000" :width="600" :height="450" :border="3" :controlsVisible="true" :clickable="false">
           <slide v-for="(category, index) in categories" :key="index" :index="index">
               <div class="slider_element" :style="{backgroundImage: 'url('+category.img_desktop+')'}">
@@ -34,7 +34,7 @@ export default {
   },
   data(){
     return{
-      categories: categories.categories
+      categories: categories.categories,
     }
   }
 }
@@ -59,7 +59,7 @@ export default {
         align-items: flex-start;
         justify-content: flex-end;
         height:100%;
-        font: 700 18px/24px 'Roboto',sans-serif;
+        font: 700 18px/24px 'Poppins', sans-serif;
         padding:0 15px;
         color:#fff;
         cursor:pointer;

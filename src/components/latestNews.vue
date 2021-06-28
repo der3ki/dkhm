@@ -33,7 +33,7 @@ export default {
 <style scoped>
   .news_home{
     padding:20px;
-    font: 700 18px/24px 'Roboto',sans-serif;
+    font: 700 18px/24px 'Poppins', sans-serif;
   }
   .news_home > ul{
     padding:0;

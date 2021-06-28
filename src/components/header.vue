@@ -1,6 +1,5 @@
 <template>
-  <header class="header">
-      
+  <header class="header" :class="{change_color: scrollPosition > 50}"> 
     <input tabindex="-1" type="checkbox" id="header_dkhm_mobile"/>
     <div class="container">
         <nav>
@@ -14,7 +13,7 @@
                     </router-link>
                 </li>
                 <li v-for="(category,index) in categories" :key="index" @click="clickCategory()">
-                    <router-link :to="category.url" :active="isActive">{{category.name}}</router-link>
+                    <router-link :to="category.url" active="active">{{category.name}}</router-link>
                 </li>
             </ul>
             <label></label>
@@ -34,12 +33,18 @@ export default {
     data(){
         return{
             categories: categories.categories,
+            scrollPosition: null
         }
     },
     methods:{
-       clickCategory(){
+        clickCategory(){
            
-       }
+        },
+        updateScroll() {
+            this.scrollPosition = window.scrollY
+        }
+    },mounted() {
+        window.addEventListener('scroll', this.updateScroll);
     }
 }
 </script>
@@ -64,7 +69,6 @@ nav > label{
     background-color: transparent;
     border: none;
     display: inline-block;
-    
 }
 nav > label > span{
     position: relative;
@@ -95,7 +99,7 @@ nav > label > span:after{
     top:8px;
 }
 header{
-    background-color:#1d1d1d;
+    background-color:#404044;
     padding:20px;
 }
 header > input{
@@ -157,7 +161,7 @@ header > input{
 .categories > li{
     text-transform: uppercase;
     text-align: left;
-    font: 500 18px/24px  'Roboto', sans-serif;
+    font: 500 18px/24px  'Poppins', sans-serif;
     cursor:pointer;
     margin:0;
 }
@@ -181,6 +185,19 @@ header > input{
     color:#ffffff;
 }
 @media (min-width:768px){
+    .container{
+        max-width: 1200px;
+        margin:0 auto;
+    }
+    nav{
+        order:2
+    }
+    nav > label{
+        display:none;
+    }
+    nav > a{
+        order:1
+    }
     .categories{
         position: initial;
         left:initial;
@@ -192,17 +209,53 @@ header > input{
         box-shadow: none;
         overflow: initial;
         flex-direction: row;
-
+        border-right: none;
     }
     .categories > li{
-        padding:25px 0 15px;
+        padding:10px;
+        text-align:center;  
     }
     .categories > li > a{
         color:#999;
-        position:relative;
-        transition: .3s all ease-in;
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        color: #ffffff;
+        font-size: 12px;
+        line-height: 1.2;
+        transition: .25s;
+        text-transform: uppercase;
+        padding: 0 0 10px;
+        letter-spacing: 2.2px;
+    }
+    .categories > li > a:hover{
+        background-color: inherit;
+    }
+    .categories > li > a:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: inline-block;
+        height: 1px;
+        width:0;
+        background-color: transparent;
+        transition: all ease .35s;
+    }
+    .categories > li > a.router-link-active{
+        background-color:inherit;
+    }
+    .categories > li > a.router-link-active:after{
+        width:100%;
+    }
+     .categories > li > a.router-link-active:hover{
+        background-color: inherit;
+     }
+    .categories > li > a:hover:after{
+        width:100%;
+        background-color:#ffffff;
     }
     
 }
+
 
 </style>
