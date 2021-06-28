@@ -1,5 +1,5 @@
 <template>
-  <header class="header" :class="{change_color: scrollPosition > 50}"> 
+  <header class="header" :class="{scrolled: scrollPosition > 50}"> 
     <input tabindex="-1" type="checkbox" id="header_dkhm_mobile"/>
     <div class="container">
         <nav>
@@ -38,7 +38,7 @@ export default {
     },
     methods:{
         clickCategory(){
-           
+           document.getElementById('header_dkhm_mobile').click();
         },
         updateScroll() {
             this.scrollPosition = window.scrollY
@@ -101,6 +101,11 @@ nav > label > span:after{
 header{
     background-color:#404044;
     padding:20px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 200;
 }
 header > input{
     position: fixed;
