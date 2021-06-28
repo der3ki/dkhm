@@ -4,6 +4,7 @@
             "img":"https://i1.wp.com/desdekryptonhastamordor.es/wp-content/uploads/2020/08/VIDEO-ESTANDAR.jpg?w=1018&ssl=1 1018w, https://i1.wp.com/desdekryptonhastamordor.es/wp-content/uploads/2020/08/VIDEO-ESTANDAR.jpg?resize=300%2C169&ssl=1 300w, https://i1.wp.com/desdekryptonhastamordor.es/wp-content/uploads/2020/08/VIDEO-ESTANDAR.jpg?resize=768%2C432&ssl=1 768w, https://i1.wp.com/desdekryptonhastamordor.es/wp-content/uploads/2020/08/VIDEO-ESTANDAR.jpg?resize=945%2C532&ssl=1 945w, https://i1.wp.com/desdekryptonhastamordor.es/wp-content/uploads/2020/08/VIDEO-ESTANDAR.jpg?resize=600%2C338&ssl=1 600w",
             "title":"Datos Meta España Age of Sigmar (15/09/2020)",
             "description":"Datos Meta España Age of Sigmar ",
+            "url":"datos-meta-españa-aos",
             "id":1,
             "created_at":"15/09/2020"
         },
@@ -12,6 +13,7 @@
             "title":"Datos Meta España Age of Sigmar (15/09/2020)",
             "description":"Datos Meta España Age of Sigmar ",
             "id":2,
+            "url":"datos-meta-españa-aos",
             "created_at":"15/09/2020"
         },
         {
@@ -19,6 +21,7 @@
             "title":"Datos Meta España Age of Sigmar (15/09/2020)",
             "description":"Datos Meta España Age of Sigmar ",
             "id":3,
+            "url":"datos-meta-españa-aos",
             "created_at":"15/09/2020"
         }
     ],

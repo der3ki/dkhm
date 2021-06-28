@@ -3,14 +3,14 @@
         <h2>Notícias destacadas</h2>
         <ul>
             <li v-for="(latestNew,index) in news" :key="index">
-                <router-link :to="latestNew.id">
+                <router-link :to="'/news/'+latestNew.url">
                     <img :src="latestNew.img" :alt="latestNew.description"/>
                     <h3>{{latestNew.title}}</h3>
-                    <div v-html="latestNew.body"></div>
                     <p>{{latestNew.created_at}}</p>
                 </router-link>
             </li>
         </ul>
+        <div id="dat"/>
     </div>
 </template>
 
@@ -20,7 +20,8 @@ export default {
   name: 'latestNews',
    data(){
     return{
-      news: []
+      news: [],
+      body:"https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/test.html?alt=media&token=77039258-2781-4f8d-bbb6-c208152d5f28"
     }
   },
   created(){
