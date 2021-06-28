@@ -190,6 +190,9 @@ header > input{
     color:#ffffff;
 }
 @media (min-width:768px){
+    header{
+        padding:10px;
+    }
     .container{
         max-width: 1200px;
         margin:0 auto;
