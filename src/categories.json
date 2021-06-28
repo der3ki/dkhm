@@ -39,6 +39,14 @@
             "img_desktop":"https://picsum.photos/600/450",
             "title":"this is sponsors",
             "description":"this is the description of sponsors"
+        },
+        {
+            "name":"Apps",
+            "url": "/apps",
+            "img":"https://picsum.photos/280/250",
+            "img_desktop":"https://picsum.photos/600/450",
+            "title":"this is apps",
+            "description":"this is the apps"
         }
     ]
 }

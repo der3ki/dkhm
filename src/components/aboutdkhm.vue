@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
     .about_dkhm{
-        font: 300 18px/24px 'Roboto',sans-serif; 
+        font: 300 18px/24px 'Poppins', sans-serif; 
         padding: 20px;
     }
     .about_dkhm > div{
