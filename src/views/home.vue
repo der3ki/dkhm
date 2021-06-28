@@ -2,7 +2,7 @@
   <section>
     <Slider></Slider>
     <aboutDkhm></aboutDkhm>
-    <latestNews></latestNews>
+    <latestNews></latestNews> 
   </section>
 </template>
 
