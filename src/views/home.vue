@@ -1,19 +1,19 @@
 <template>
   <section>
-    <Slider></Slider>
+    <Banner></Banner>
     <aboutDkhm></aboutDkhm>
     <latestNews></latestNews> 
   </section>
 </template>
 
 <script>
-import Slider from '../components/slider.vue';
+import Banner from '../components/banner.vue';
 import aboutDkhm from '../components/aboutdkhm.vue';
 import latestNews from '../components/latestNews.vue';
 export default {
   name: 'Home',
   components: {
-    Slider,
+    Banner,
     aboutDkhm,
     latestNews
   },

@@ -100,7 +100,7 @@ nav > label > span:after{
 }
 header{
     background-color:#404044;
-    padding:10px;
+    padding:10px 15px;
     position:fixed;
     top:0;
     left:0;
@@ -195,6 +195,11 @@ header > input{
 @media (min-width:768px){
     header{
         padding:10px;
+        background:transparent;
+        transition: .3s ease-in;
+    }
+    header.scrolled{
+        background:#404044;
     }
     .container{
         max-width: 1200px;
@@ -235,7 +240,7 @@ header > input{
         line-height: 1.2;
         transition: .25s;
         text-transform: uppercase;
-        padding:10px 0 0 10px;
+        padding:10px 0 10px 0px;
         letter-spacing: 2.2px;
     }
     .categories > li > a:hover{
@@ -257,6 +262,7 @@ header > input{
     }
     .categories > li > a.router-link-active:after{
         width:100%;
+        background-color:#ffffff;
     }
      .categories > li > a.router-link-active:hover{
         background-color: inherit;
