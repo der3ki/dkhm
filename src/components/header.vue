@@ -100,7 +100,7 @@ nav > label > span:after{
 }
 header{
     background-color:#404044;
-    padding:20px;
+    padding:10px;
     position:fixed;
     top:0;
     left:0;
@@ -143,7 +143,7 @@ header > input{
 .categories{
     position: fixed;
     right: auto;
-    top: 104px;
+    top: 84px;
     left: -270px;
     bottom: 0;
     z-index: 1;
@@ -177,9 +177,12 @@ header > input{
 .categories > li > a{
     color: #9b9b9b;
     text-decoration: none;
-    padding: 25px 0 15px 15px;
+    padding: 15px 0 15px 15px;
     display: block;
     transition: .3s ease-in;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 34px;
 }
 .categories > li > a:hover{
     background-color:#505cfd;
@@ -232,7 +235,7 @@ header > input{
         line-height: 1.2;
         transition: .25s;
         text-transform: uppercase;
-        padding: 0 0 10px;
+        padding:10px 0 0 10px;
         letter-spacing: 2.2px;
     }
     .categories > li > a:hover{
