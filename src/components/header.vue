@@ -144,7 +144,7 @@ header > input{
     position: fixed;
     right: auto;
     top: 84px;
-    left: -270px;
+    left: -272px;
     bottom: 0;
     z-index: 1;
     margin: 0;
