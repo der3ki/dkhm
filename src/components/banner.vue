@@ -55,7 +55,7 @@ export default {
         padding:84px 15px 50px;
         background:url("https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/banner_dkhm.jpg?alt=media&token=a848d736-8df9-4a6d-a060-f7e65b436272") center center / cover no-repeat;
         min-height:367px;
-        position:relative;
+        position:relative;  
     }
     .banner:after{
         content:'';
@@ -76,6 +76,9 @@ export default {
         color: #fff;
         display: block;
         text-shadow: 0px 0px 10px rgb(0 0 0 / 35%);
+        position: relative;
+        z-index: 12;
+        margin-top: 170px;
     }
     .banner > div > button{
 

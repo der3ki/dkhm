@@ -6,14 +6,16 @@
                     <img src="../assets/about_us.jpg" alt="Bienvenidos a DKHM Wargames"/>
                 </header>
                 <section>
-                    <h1>DKHM Wargames</h1>
-                    <p>
-                        DKHM es un canal dedicado a los Wargames, concretamente a los universos de Warhammer y, más aún, a Age of Sigmar.
-                        Síguenos, ya seas de Sigmar o Nagash (o de Khorne, o de Gorkamorka, o de Archaon, o de...) y disfrutemos este viaje por los Reinos Mortales.
-                    </p>
-                    <router-link to="/team" title="Leer más">
-                        Leer más
-                    </router-link>
+                    <div>
+                        <h1>DKHM Wargames</h1>
+                        <p>
+                            DKHM es un canal dedicado a los Wargames, concretamente a los universos de Warhammer y, más aún, a Age of Sigmar.
+                            Síguenos, ya seas de Sigmar o Nagash (o de Khorne, o de Gorkamorka, o de Archaon, o de...) y disfrutemos este viaje por los Reinos Mortales.
+                        </p>
+                        <router-link to="/team" title="Leer más">
+                            Leer más
+                        </router-link>
+                    </div>
                 </section>
             </article>
         </div>
@@ -55,19 +57,18 @@ export default {
         -webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.30); 
         box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.30);
     }
-    .about_dkhm > div > article > section > h1{
+    .about_dkhm > div > article > section > div > h1{
         font: 500 24px/1.5 'Poppins',sans-serif;
         color:#404044;
         margin:15px 0;
         text-align: left;
-        position: relative;
     }
-    .about_dkhm > div > article > section > p{
+    .about_dkhm > div > article > section > div > p{
         font: 400 14px/2.14286 "Montserrat", serif;
         color:#888888;
         text-align: left;
     }
-    .about_dkhm > div > article > section > a{
+    .about_dkhm > div > article > section > div > a{
         display: inline-block;
         padding: 14px 33px;
         font: 700 14px/1.25 "Poppins",sans-serif;
@@ -97,6 +98,7 @@ export default {
         }
         .about_dkhm > div > article > header, .about_dkhm > div > article > section{
             width:50%;
+            padding: 0 15px;
         }
         .about_dkhm > div > article > header{
             margin-right:20px;
@@ -105,39 +107,43 @@ export default {
             padding-top:20px;
             margin-left:20px;
         }
-        .about_dkhm > div > article > section > h1{
+        .about_dkhm > div > article > section > div > h1{
             margin-top:0;
             font-size: 20px;
         }
-        .about_dkhm > div > article > section > p{
+        .about_dkhm > div > article > section > div > p{
             line-height: 21px;
         }
     }
     @media(min-width:992px){
         .about_dkhm > div > article > header{
-            margin-right:40px;
+            margin-right:0;
         }
         .about_dkhm > div > article > section{
-            margin-left:40px;
-            padding-top:60px
+            margin-left:0;
+            padding-top:0;
         }
-        .about_dkhm > div > article > section > h1{
+        .about_dkhm > div > article > section > div{
+            max-width: 430px;
+            margin:45px auto 0
+        }
+        .about_dkhm > div > article > section > div > h1{
             font-size: 33px;
             line-height: 1.33333;
             padding-bottom: 15px;
+            position:relative;
         }
-        .about_dkhm > div > article > section > h1:after{
+        .about_dkhm > div > article > section > div > h1:after{
             content: '';
-            left: -110px;
-            /* right: 0px; */
+            left: -140px;
             bottom: 0;
             background: red;
             display: block;
             height: 2px;
             position: absolute;
-            width: 400px;
+            width: 430px;
         }
-        .about_dkhm > div > article > section > p{
+        .about_dkhm > div > article > section > div > p{
             line-height: 2.14286;
         }
     }
