@@ -100,7 +100,7 @@ nav > label > span:after{
 }
 header{
     background-color:#404044;
-    padding:10px 15px;
+    padding:10px 20px;
     position:fixed;
     top:0;
     left:0;
