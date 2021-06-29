@@ -49,12 +49,23 @@ export default {
         -ms-transform:translateX(-50%) rotate(90deg);
         transform:translateX(-50%) rotate(90deg);
         cursor:pointer;
+        z-index: 12;
     }
     .banner{
         padding:84px 15px 50px;
         background:url("https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/banner_dkhm.jpg?alt=media&token=a848d736-8df9-4a6d-a060-f7e65b436272") center center / cover no-repeat;
         min-height:367px;
         position:relative;
+    }
+    .banner:after{
+        content:'';
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color: rgb(0 0 0 / 40%);
+
     }
     .banner > div > h1{
         font-family: "SkateBrand",sans-serif;
@@ -77,6 +88,13 @@ export default {
     @media(min-width:992px){
         .banner{
             min-height: 587px;
+        }
+        .banner > div > h1{
+            font-size: 3.7em;
+            line-height: 3.7em;
+            position: relative;
+            z-index: 12;
+            margin-top: 180px;
         }
     }
 </style>
