@@ -42,6 +42,10 @@ export default {
     padding:20px;
     text-align: left;
   }
+  .news_home > article{
+    max-width: 1200px;
+    margin:0 auto;
+  }
   .news_home > article > header > h2{
     font: 500 24px/1.5 'Poppins',sans-serif;
     position:relative;
