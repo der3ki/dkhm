@@ -170,5 +170,8 @@ export default {
         .routes li{
             width:auto;
         }
+        nav{
+            margin-left:50px;
+        }
     }
 </style>
