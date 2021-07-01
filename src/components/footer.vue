@@ -50,6 +50,9 @@
             </div>
             <nav class="routes">
                 <ul>
+                    <li>
+                        <router-link active="active" to="/home">home</router-link>
+                    </li>
                     <li v-for="(category,index) in categories" :key="index" @click="clickCategory()">
                         <router-link :to="category.url" active="active">{{category.name}}</router-link>
                     </li>
@@ -88,7 +91,6 @@ export default {
     footer{
         background:#1f1f1f;
         padding:20px;
-        display:flex;
     }
     .rrss figure{
         margin: 0;
@@ -129,10 +131,44 @@ export default {
     .rrss a{
         display:block;
     }
+    .routes ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .routes li{
+        padding:10px;
+        width:calc(100%/3)
+    }
+    .routes li a{
+        display:block;
+        text-decoration:none;
+        color:#ffffff;
+        text-transform: capitalize;
+        position:relative;
+        font: 300 18px/24px 'Poppins',sans-serif;
+    }
+    .routes li a.router-link-active{
+        font: 700 18px/24px 'Poppins',sans-serif;
+    }
     @media(min-width:601px){
-       
+        .max-width{
+            max-width:600px
+        }
     }
     @media(min-width:992px){
-       
+        .max-width{
+            max-width:1200px;
+        }
+        footer > div{
+            display:flex;
+            flex-direction:row;
+            align-items: center;    
+        }
+        .routes li{
+            width:auto;
+        }
     }
 </style>
