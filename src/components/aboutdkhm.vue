@@ -116,6 +116,9 @@ export default {
         }
     }
     @media(min-width:992px){
+        .about_dkhm{
+            padding:50px;
+        }
         .about_dkhm > div > article > header{
             margin-right:0;
         }

@@ -2,7 +2,8 @@
   <section>
     <Banner></Banner>
     <aboutDkhm></aboutDkhm>
-    <latestNews></latestNews> 
+    <latestNews></latestNews>
+    <bannerSm></bannerSm>
   </section>
 </template>
 
@@ -10,12 +11,15 @@
 import Banner from '../components/banner.vue';
 import aboutDkhm from '../components/aboutdkhm.vue';
 import latestNews from '../components/latestNews.vue';
+import bannerSm from '../components/bannerSm.vue';
+
 export default {
   name: 'Home',
   components: {
     Banner,
     aboutDkhm,
-    latestNews
+    latestNews,
+    bannerSm
   },
   data(){
     return{

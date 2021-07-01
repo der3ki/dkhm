@@ -12,7 +12,7 @@ import NotFoundComponent from '../views/notFoundComponent.vue'
 Vue.use(VueRouter)
 
 const routes = [
-    { path: '/', name: 'Home', component: Home },
+    { path: '/', redirect: "/home"},
     { path: '/home', name: 'Home', component: Home },
     { path: '/news/',name: 'News',component: News},
     { path:'/news/:id', props: true, component:ActualNews, name:'ActualNews'},
@@ -28,5 +28,6 @@ const router = new VueRouter({
     base: process.env.BASE_URL,
     routes
 })
+
 
 export default router
