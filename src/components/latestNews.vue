@@ -102,6 +102,9 @@ export default {
     color:#3b91f7;
   }
   @media (min-width:601px){
+    .news_home{
+      padding:50px;
+    }
     .news_home > article > header{
       text-align: center;
       max-width: 500px;
