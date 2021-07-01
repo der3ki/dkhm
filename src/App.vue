@@ -4,15 +4,18 @@
     <transition>
       <router-view></router-view>
     </transition>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Header from './components/header';
+import Footer from './components/footer';
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Footer
   },
 }
 </script>
@@ -29,5 +32,10 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+ul{
+  margin:0;
+  list-style-type: none;
+  padding:0;
 }
 </style>
