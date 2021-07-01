@@ -41,9 +41,33 @@ export default {
       align-items: center;
     }
     .banner_sm > article{
-      padding:50px 20px;
+      padding:40px 20px;
       width:100%;
       box-sizing: border-box;
+      position: relative;
+      z-index: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-align: left;
+    }
+    .banner_sm > article:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+    }
+    .banner_sm > article.patreon:before{
+      background: #ff424d;
+    }
+    .banner_sm > article.twitch:before{
+      background: #9147ff;
     }
     .banner_sm > article > header, .banner_sm > article > section{
       max-width: 320px;
@@ -66,15 +90,15 @@ export default {
       padding:15px;
       background-color:transparent;
       border:1px solid #ffffff;
-      display:block;
+      display:inline-block;
       color:#ffffff;
       border-radius:25px;
     }
     .patreon{
-      background-color:#ff424d;
+      background-image:url('https://technext.github.io/docmed/img/banner/emergency-1.png');
     }
     .twitch{
-      background-color: #9147ff;
+      background-image:url('https://technext.github.io/docmed/img/banner/emergency-1.png');
     }
     @media(min-width:768px){
         .banner_sm{
@@ -90,6 +114,9 @@ export default {
         display:flex;
         flex-direction:row;
         justify-content: center;
+        align-items: center;
+        padding: 91px 0;
+        background-position: center;
       }
       .banner_sm > article > header, .banner_sm > article > section{
         max-width:none;
