@@ -22,7 +22,6 @@
 </template>
 
 <script>
-import news from '../news.json';
 import { mapGetters } from "vuex";
 export default {
   name: 'latestNews',
@@ -31,9 +30,6 @@ export default {
       news: [],
       body:"https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/test.html?alt=media&token=77039258-2781-4f8d-bbb6-c208152d5f28"
     }
-  },
-  created(){
-    this.news = news.home_news
   },
   computed:{
     ...mapGetters(["latestNews"]),

@@ -1,5 +1,5 @@
 <template>
-    <div class="banner">
+    <div class="banner" :style="{ backgroundImage: 'url(' + image + ')' }">
         <div>
             <h1>Bienvenido a DKHM</h1>
             <button @click="scrollTo()">
@@ -13,6 +13,9 @@
 
 export default {
   name: 'Banner',
+  props:{
+    image: String
+  },
   data(){
     return{
      
@@ -53,9 +56,10 @@ export default {
     }
     .banner{
         padding:84px 15px 50px;
-        background:url("https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/banner_dkhm.jpg?alt=media&token=a848d736-8df9-4a6d-a060-f7e65b436272") center center / cover no-repeat;
+        background:center center / cover no-repeat;
         min-height:367px;
         position:relative;  
+        box-sizing: border-box;
     }
     .banner:after{
         content:'';
