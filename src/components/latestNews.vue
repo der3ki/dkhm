@@ -7,12 +7,12 @@
         </header>
         <section>
           <ul>
-              <li v-for="(latestNew,index) in news" :key="index">
+              <li v-for="(latestNew,index) in latestNews" :key="index">
                 <img :src="latestNew.img" :alt="latestNew.description"/>
                 <div>
                   <h4>{{latestNew.title}}</h4>
                   <p>{{latestNew.description}}</p>
-                  <router-link :to="'/news/'+latestNew.url">Ver más</router-link>
+                  <router-link :to="'/news/'+latestNew._id">Ver más</router-link>
                 </div>
               </li>
           </ul>
@@ -23,6 +23,7 @@
 
 <script>
 import news from '../news.json';
+import { mapGetters } from "vuex";
 export default {
   name: 'latestNews',
    data(){
@@ -33,6 +34,9 @@ export default {
   },
   created(){
     this.news = news.home_news
+  },
+  computed:{
+    ...mapGetters(["latestNews"]),
   }
 }
 </script>
@@ -83,6 +87,7 @@ export default {
     width:100%;
     padding: 10px;
     box-sizing: border-box;
+    border-radius:20px
   }
   .news_home > article > section > ul > li > div{
     padding:20px;
