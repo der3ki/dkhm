@@ -15,6 +15,9 @@ export default new Vuex.Store({
   },
   getters:{
     latestNews: (state) => state.latestNews,
+    getNewsById: (state) => (id) => {
+      return state.latestNews.find(newDetail => newDetail._id === id)
+    }
   },
   actions: {
     getLatestNews({ commit }) {
@@ -24,6 +27,7 @@ export default new Vuex.Store({
               commit("setLatestNews", response.data.news);
           });
     },
+    
   },
   modules: {
   }

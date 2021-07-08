@@ -12,7 +12,9 @@
                 <div>
                   <h4>{{latestNew.title}}</h4>
                   <p>{{latestNew.description}}</p>
-                  <router-link :to="'/news/'+latestNew._id">Ver más</router-link>
+                  <router-link :to="{
+                    path: '/news/'+latestNew._id,
+                  }">Ver más</router-link>
                 </div>
               </li>
           </ul>
@@ -30,6 +32,9 @@ export default {
       news: [],
       body:"https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/test.html?alt=media&token=77039258-2781-4f8d-bbb6-c208152d5f28"
     }
+  },
+  methods:{
+   
   },
   computed:{
     ...mapGetters(["latestNews"]),
