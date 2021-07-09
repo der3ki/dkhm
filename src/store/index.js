@@ -6,14 +6,19 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    latestNews:[]
+    latestNews:[],
+    allNews:[]
   },
   mutations: {
     setLatestNews(state,lastNews){
       state.latestNews = lastNews
+    },
+    setNews(state,allNews){
+      state.allNews = allNews
     }
   },
   getters:{
+    allNews: (state) => state.allNews,
     latestNews: (state) => state.latestNews,
     getNewsById: (state) => (id) => {
       return state.latestNews.find(newDetail => newDetail._id === id)
@@ -27,7 +32,13 @@ export default new Vuex.Store({
               commit("setLatestNews", response.data.news);
           });
     },
-    
+    getAllNews({commit},params){
+      axios
+        .get('https://dkhm-api.herokuapp.com/api/news/getAllNews?limit='+params.limit+'&from='+params.from)
+        .then((response)=>{
+          commit("setNews",response.data)
+        })
+    }
   },
   modules: {
   }

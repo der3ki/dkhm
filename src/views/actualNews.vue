@@ -1,13 +1,13 @@
 <template>
   <section>
-    <Banner image="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/ageofsigmarmural.png?alt=media&token=fce2ebad-b15d-4aa7-bfe0-07a1f21c6f53"></Banner>
+    <Banner :home="false" :title="this.getNewsById.title" image="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/ageofsigmarmural.png?alt=media&token=fce2ebad-b15d-4aa7-bfe0-07a1f21c6f53"></Banner>
     <div class="news_detail">
       <div v-if="this.getNewsById">
         <img :src="this.getNewsById.img" :alt="this.getNewsById.title"/>
         <h2>{{new Date(this.getNewsById.createdat).getDate()}} {{ new Date(this.getNewsById.createdat).getMonth()+1 }} {{ new Date(this.getNewsById.createdat).getFullYear()}}</h2>
         <h3>{{this.getNewsById.description}}</h3>
         <p v-if="this.getNewsById.outstanding" class="outstanding">{{this.getNewsById.outstanding}}</p>
-        <p v-html="this.getNewsById.body"></p>
+        <div v-html="this.getNewsById.body"></div>
       </div>
       <latestNews></latestNews>
     </div>
@@ -59,7 +59,7 @@ h2{
 h3{
   color:#000000;
 }
-p{
+p,div{
   font-size:14px;
   line-height: 18px;
   font-weight: 300;
@@ -100,6 +100,12 @@ p.outstanding:after, .news_detail >>> p.outstanding:after{
     top: 0;
     height: auto;
     width: 3px;
+  }
+  img{
+    width:auto;
+    height:500px;
+    margin: 0 auto;
+    display: block;
   }
 }
 </style>

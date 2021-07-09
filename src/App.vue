@@ -19,6 +19,7 @@ export default {
   },
   mounted(){
     this.$store.dispatch("getLatestNews");
+    this.$store.dispatch("getAllNews",{limit:20,from:0})
   }
 }
 </script>
