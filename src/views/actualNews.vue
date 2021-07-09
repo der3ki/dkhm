@@ -1,6 +1,6 @@
 <template>
   <section>
-    <Banner image="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/ageofsigmarmural.png?alt=media&token=fce2ebad-b15d-4aa7-bfe0-07a1f21c6f53"></Banner>
+    <Banner :home="false" :title="this.getNewsById.title" image="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/ageofsigmarmural.png?alt=media&token=fce2ebad-b15d-4aa7-bfe0-07a1f21c6f53"></Banner>
     <div class="news_detail">
       <div v-if="this.getNewsById">
         <img :src="this.getNewsById.img" :alt="this.getNewsById.title"/>

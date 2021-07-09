@@ -53,7 +53,7 @@
                     <li>
                         <router-link active="active" to="/home">home</router-link>
                     </li>
-                    <li v-for="(category,index) in categories" :key="index" @click="clickCategory()">
+                    <li v-for="(category,index) in categories" :key="index">
                         <router-link :to="category.url" active="active">{{category.name}}</router-link>
                     </li>
                 </ul>

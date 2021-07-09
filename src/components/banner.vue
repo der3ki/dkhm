@@ -1,7 +1,7 @@
 <template>
-    <div class="banner" :style="{ backgroundImage: 'url(' + image + ')' }">
+    <div :class="this.home ? 'banner home' : 'banner'" :style="{ backgroundImage: 'url(' + image + ')' }">
         <div>
-            <h1>Bienvenido a DKHM</h1>
+            <h1>{{title}}</h1>
             <button @click="scrollTo()">
                 >
             </button>
@@ -14,7 +14,9 @@
 export default {
   name: 'Banner',
   props:{
-    image: String
+    image: String,
+    title: String,
+    home: Boolean
   },
   data(){
     return{
@@ -71,6 +73,9 @@ export default {
         background-color: rgb(0 0 0 / 40%);
 
     }
+    h1{
+        text-align: center;
+    }
     .banner > div > h1{
         font-family: "SkateBrand",sans-serif;
         font-weight: 800;
@@ -93,14 +98,17 @@ export default {
         }
     }
     @media(min-width:992px){
-        .banner{
+        .banner.home{
             min-height: 587px;
         }
-        .banner > div > h1{
+        .banner > div >h1{
             font-size: 3.7em;
             line-height: 3.7em;
             position: relative;
             z-index: 12;
+            margin-top:60px;
+        }
+        .banner.home > div > h1{
             margin-top: 180px;
         }
     }
