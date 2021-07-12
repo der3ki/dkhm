@@ -18,9 +18,13 @@ export default new Vuex.Store({
         from: allNews.from,
         limit: allNews.limit,
         news: allNews.news,
-        paginatorElements: allNews.news.length / 3
       }
       state.allNews = finalState
+    },
+    setMoreNews(state,allNews){
+      allNews.map(news=>{
+        state.allNews.news.push(news)
+      })
     }
   },
   getters:{
@@ -44,7 +48,15 @@ export default new Vuex.Store({
         .then((response)=>{
           commit("setNews",response.data)
         })
-    }
+    },
+    async getMoreNews({commit},params){
+      axios
+        .get('https://dkhm-api.herokuapp.com/api/news/getAllNews?limit='+params.limit+'&from='+params.from)
+        .then((response)=>{
+          console.log(response.data.news)
+          commit("setMoreNews",response.data.news)
+        })
+    },
   },
   modules: {
   }

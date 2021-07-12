@@ -144,5 +144,8 @@ export default {
     .news_home > article > section > ul > li{
       width: calc(33% - 30px)
     }
+    .news_home > article > section > ul > li > img{
+      height: 22vh;
+    }
   }
 </style>
