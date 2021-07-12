@@ -18,7 +18,7 @@ export default {
     Footer
   },
   mounted(){
-    this.$store.dispatch("getAllNews",{limit:20,from:0})
+    this.$store.dispatch("getAllNews",{limit:3,from:0})
     this.$store.dispatch("getLatestNews");
   }
 }

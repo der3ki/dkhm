@@ -14,8 +14,7 @@
             </router-link>
           </li>
       </ul>
-      <ul>
-      </ul>
+      <button @click="loadMoreNews()"> Mostrar más </button>
     </div>
   </section>
 </template>
@@ -30,8 +29,8 @@ export default {
   },
   data(){
     return{
-      maxElements:3,
-      totalPaginatorElements:0,
+      actualFrom:0
+      
     }
   },
   computed:{
@@ -40,6 +39,13 @@ export default {
       return this.allNews.news
     },
   },
+  methods:{
+    loadMoreNews(){
+        let limit=3;
+        this.actualFrom = this.actualFrom === 0 ? (this.actualFrom+1)+limit : this.actualFrom+limit
+        this.$store.dispatch("getMoreNews",{limit:limit,from:this.actualFrom})
+    }
+  }
 }
 </script>
 
@@ -70,7 +76,7 @@ export default {
   img{
     display:block;
     width:100%;
-    min-height: 30vh;
+    min-height: 25vh;
   }
   a{
     text-decoration: none;
@@ -98,7 +104,7 @@ export default {
   }
   @media (min-width:768px){
     li{
-      max-width:450px;
+      max-width:350px;
       margin: 0 30px 30px;
     }
   }
