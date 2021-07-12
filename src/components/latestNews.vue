@@ -1,5 +1,5 @@
 <template>
-    <div class="news_home">
+    <div :class="this.home ? 'news_home home':'news_home'">
       <article>
         <header>
           <h2>Notícias destacadas</h2>
@@ -33,6 +33,9 @@ export default {
       body:"https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/test.html?alt=media&token=77039258-2781-4f8d-bbb6-c208152d5f28"
     }
   },
+  props:{
+    home: Boolean,
+  },
   methods:{
    
   },
@@ -43,8 +46,10 @@ export default {
 </script>
 
 <style scoped>
-  .news_home{
+  .news_home.home{
     padding:20px;
+  }
+  .news_home{
     text-align: left;
   }
   .news_home > article{

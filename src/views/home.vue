@@ -2,7 +2,7 @@
   <section>
     <Banner :home="true" title="Bienvenido a DKHM" image="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/BANNER_DKHM2020.jpg?alt=media&token=414c5730-dbfc-4cb2-bc40-7d90854e7365"></Banner>
     <aboutDkhm></aboutDkhm>
-    <latestNews></latestNews>
+    <latestNews :home="true"></latestNews>
     <bannerSm></bannerSm>
   </section>
 </template>

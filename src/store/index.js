@@ -14,25 +14,31 @@ export default new Vuex.Store({
       state.latestNews = lastNews
     },
     setNews(state,allNews){
-      state.allNews = allNews
+      let finalState = {
+        from: allNews.from,
+        limit: allNews.limit,
+        news: allNews.news,
+        paginatorElements: allNews.news.length / 3
+      }
+      state.allNews = finalState
     }
   },
   getters:{
     allNews: (state) => state.allNews,
     latestNews: (state) => state.latestNews,
     getNewsById: (state) => (id) => {
-      return state.latestNews.find(newDetail => newDetail._id === id)
+      return state.allNews.news ? state.allNews.news.find(newDetail => newDetail._id === id) : ''
     }
   },
   actions: {
-    getLatestNews({ commit }) {
+    async getLatestNews({ commit }) {
       axios
           .get("https://dkhm-api.herokuapp.com/api/news/getLatestNews")
           .then((response) => {
               commit("setLatestNews", response.data.news);
           });
     },
-    getAllNews({commit},params){
+    async getAllNews({commit},params){
       axios
         .get('https://dkhm-api.herokuapp.com/api/news/getAllNews?limit='+params.limit+'&from='+params.from)
         .then((response)=>{
