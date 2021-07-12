@@ -1,6 +1,7 @@
 <template>
   <section>
-    <Banner :home="false" :title="this.getNewsById.title" image="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/ageofsigmarmural.png?alt=media&token=fce2ebad-b15d-4aa7-bfe0-07a1f21c6f53"></Banner>
+    <Banner v-if="this.getNewsById" :home="false" :title="this.getNewsById.title" image="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/ageofsigmarmural.png?alt=media&token=fce2ebad-b15d-4aa7-bfe0-07a1f21c6f53"></Banner>
+    <Banner v-else :home="false" title="Noticías" image="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/ageofsigmarmural.png?alt=media&token=fce2ebad-b15d-4aa7-bfe0-07a1f21c6f53"></Banner>
     <div class="news_detail">
       <div v-if="this.getNewsById">
         <img :src="this.getNewsById.img" :alt="this.getNewsById.title"/>
@@ -9,7 +10,7 @@
         <p v-if="this.getNewsById.outstanding" class="outstanding">{{this.getNewsById.outstanding}}</p>
         <div v-html="this.getNewsById.body"></div>
       </div>
-      <latestNews></latestNews>
+      <latestNews :home="false"></latestNews>
     </div>
   </section>
 </template>
@@ -25,13 +26,11 @@ export default {
     },
     data(){
       return{
-        newsDetail:{},
       }
     },
-    props: ['id'],
     computed:{
       getNewsById(){
-        return this.$store.getters.getNewsById(this.id);
+        return this.$store.getters.getNewsById(this.$route.params.id);
       },
     },
 }
@@ -45,6 +44,10 @@ h2,h3,p{
   margin:0;
 }
 .news_detail{
+      background-image: url('../assets/background-home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   padding: 20px;
   background-color:#fff;
   font: 500 16px/20px 'Poppins',sans-serif;

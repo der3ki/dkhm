@@ -14,6 +14,8 @@
             </router-link>
           </li>
       </ul>
+      <ul>
+      </ul>
     </div>
   </section>
 </template>
@@ -21,7 +23,6 @@
 <script>
 import Banner from '../components/banner.vue';
 import { mapGetters } from "vuex";
-
 export default {
   name: 'News',
   components: {
@@ -29,17 +30,16 @@ export default {
   },
   data(){
     return{
-      limit:0,
-      from:0,
+      maxElements:3,
+      totalPaginatorElements:0,
     }
   },
   computed:{
     ...mapGetters(["allNews"]),
+    totalNews(){
+      return this.allNews.news
+    },
   },
-  beforeMount(){
-    this.limit = this.$store.getters.allNews.limit;
-    this.from = this.$store.getters.allNews.from;
-  }
 }
 </script>
 
@@ -65,11 +65,12 @@ export default {
     max-width: 350px;
     width: 100%;
     box-sizing: border-box;
-    margin: 0 30px 30px;
+    margin: 15px 0;
   }
   img{
     display:block;
     width:100%;
+    min-height: 30vh;
   }
   a{
     text-decoration: none;
@@ -98,6 +99,7 @@ export default {
   @media (min-width:768px){
     li{
       max-width:450px;
+      margin: 0 30px 30px;
     }
   }
 </style>
