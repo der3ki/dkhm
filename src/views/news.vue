@@ -7,7 +7,8 @@
             <router-link :to="{ path: 'news/'+news._id }" >
               <img :src="news.img" :alt="news.title"/>
               <div>
-                <h2> {{ news.createdat}} </h2>
+                
+                <h2> {{new Date(news.createdat).getDate()}} - {{ new Date(news.createdat).getMonth()+1 }} - {{ new Date(news.createdat).getFullYear()}} </h2>
                 <h3> {{ news.title }}</h3>
                 <p> {{ news. description}}</p>
               </div>
