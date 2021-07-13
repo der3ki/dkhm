@@ -42,7 +42,7 @@ export default {
   methods:{
     loadMoreNews(){
         let limit=3;
-        this.actualFrom = this.actualFrom === 0 ? (this.actualFrom+1)+limit : this.actualFrom+limit
+        this.actualFrom = this.actualFrom+limit
         this.$store.dispatch("getMoreNews",{limit:limit,from:this.actualFrom})
     }
   }
