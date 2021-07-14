@@ -87,7 +87,7 @@ export default {
         text-shadow: 0px 0px 10px rgb(0 0 0 / 35%);
         position: relative;
         z-index: 12;
-        margin-top: 170px;
+        margin-top: 70px;
     }
     .banner > div > button{
 
