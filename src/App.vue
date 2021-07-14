@@ -18,8 +18,7 @@ export default {
     Footer
   },
   mounted(){
-    this.$store.dispatch("getAllNews",{limit:3,from:0})
-    this.$store.dispatch("getLatestNews");
+    Promise.all([this.$store.dispatch("getAllNews",{limit:3,from:0}),this.$store.dispatch("getLatestNews"), this.$store.dispatch("getAllFactions")])
   }
 }
 </script>

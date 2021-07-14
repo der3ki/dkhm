@@ -73,13 +73,13 @@ p.outstanding, .news_detail >>> p.outstanding{
   font-size: 14px;
   line-height: 20px;
   margin: 20px 0;
-  padding: 0 15px 15px;
+  padding: 0 0 15px;
 }
 p.outstanding:after, .news_detail >>> p.outstanding:after{
   content:'';
   position:absolute;
-  left:15px;
-  right:15px;
+  left:0;
+  right:0;
   bottom:0;
   height: 2px;
   background-color:red;

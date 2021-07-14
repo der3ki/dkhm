@@ -7,7 +7,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     latestNews:[],
-    allNews:[]
+    allNews:[],
+    factions:{}
   },
   mutations: {
     setLatestNews(state,lastNews){
@@ -25,13 +26,20 @@ export default new Vuex.Store({
       allNews.map(news=>{
         state.allNews.news.push(news)
       })
+    },
+    setFactions(state,factions){
+      state.factions = factions
     }
   },
   getters:{
     allNews: (state) => state.allNews,
+    allFactions: (state) => state.factions,
     latestNews: (state) => state.latestNews,
     getNewsById: (state) => (id) => {
       return state.allNews.news ? state.allNews.news.find(newDetail => newDetail._id === id) : ''
+    },
+    getFactionByAlliance: (state) => (name) => {
+      return  state.factions.factions ? state.factions.factions.filter(faction =>faction.grandAlliance.toLowerCase() === name): ''
     }
   },
   actions: {
@@ -55,6 +63,13 @@ export default new Vuex.Store({
         .then((response)=>{
           console.log(response.data.news)
           commit("setMoreNews",response.data.news)
+        })
+    },
+    async getAllFactions({commit}){
+      axios
+        .get('https://dkhm-api.herokuapp.com/api/factions')
+        .then((response)=>{
+          commit("setFactions",response.data)
         })
     },
   },
