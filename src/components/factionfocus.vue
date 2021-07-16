@@ -128,7 +128,7 @@ export default {
         width:100%;
     }
     .grand_Alliances li ul{
-        font-size: 15px;
+    font-size: 15px;
     font-weight: 300;
     max-height: 0;
     overflow: hidden;
@@ -160,7 +160,7 @@ export default {
     }
     .grand_Alliances input:checked ~  ul{
       
-            max-height: 600px;
+    max-height: 600px;
     -moz-opacity: 1;
     -khtml-opacity: 1;
     -webkit-opacity: 1;
@@ -180,6 +180,10 @@ export default {
     figure img{
         max-width: 250px;
         width:100%;
+    }
+    label{
+        display: inline-block;
+        cursor: pointer;
     }
     @media(min-width:601px){
         .grand_Alliances > li{

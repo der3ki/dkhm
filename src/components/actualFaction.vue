@@ -21,6 +21,14 @@
                     </li>
                 </ul>
             </div>
+            <div class="enhancements faction_prop" v-if="getFactionByName.enhancements">
+                <h2>{{getFactionByName.enhancements.name}}</h2>
+                <p>{{getFactionByName.enhancements.body}}</p>
+            </div>
+            <div class="tactics faction_prop" v-if="getFactionByName.tacticts">
+                <h2>{{getFactionByName.tacticts.name}}</h2>
+                <p> {{getFactionByName.tacticts.body}}</p>
+            </div>
             <div class="subfactions faction_prop">
                 <h2>{{getFactionByName.subfactions.name}}</h2>
                 <ul>
@@ -67,14 +75,6 @@
                     </li>
                 </ul>
             </div>
-            <div class="enhancements faction_prop" v-if="getFactionByName.enhancements">
-                <h2>{{getFactionByName.enhancements.name}}</h2>
-                <p>{{getFactionByName.enhancements.body}}</p>
-            </div>
-            <div class="tactics faction_prop" v-if="getFactionByName.tacticts">
-                <h2>{{getFactionByName.tacticts.name}}</h2>
-                <p> {{getFactionByName.tacticts.body}}</p>
-            </div>
        </div>
     </div>
 </template>
@@ -102,6 +102,8 @@ export default {
     }
     .faction{
         padding:0 15px;
+        display:flex;
+        margin-top:50px;
     }
     .faction > div{
         max-width: 1200px;
@@ -124,7 +126,8 @@ export default {
         font: 300 14px/20px "Poppins",sans-serif;
     }
     .faction_prop{
-        margin:20px 0;
+        max-width: 600px;
+        margin: 20px auto 40px;
     }
     .input{
         position: fixed;
@@ -139,7 +142,6 @@ export default {
     }
     .hability_name{
         font-weight: 500;
-        display:block;
     }
     .hability_descrip{
         font-style:italic
@@ -172,6 +174,8 @@ export default {
         filter: alpha(opacity=100);
         padding-bottom: 25px;
     }
-    
+    .must{
+        display:block;
+    }
     
 </style>
