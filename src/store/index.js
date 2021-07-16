@@ -40,6 +40,9 @@ export default new Vuex.Store({
     },
     getFactionByAlliance: (state) => (name) => {
       return  state.factions.factions ? state.factions.factions.filter(faction =>faction.grandAlliance.toLowerCase() === name): ''
+    },
+    getFactionByName: (state) => (name)=>{
+      return state.factions.factions ? state.factions.factions.find(faction => faction.name === name): ''
     }
   },
   actions: {
