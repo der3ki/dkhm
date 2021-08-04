@@ -21,10 +21,8 @@ export default {
     Promise.all([
       this.$store.dispatch("getAllNews",{limit:3,from:0}),
       this.$store.dispatch("getLatestNews"), 
-      this.$store.dispatch("getAllFactions"), 
-      this.$store.dispatch("getAllBackground"),
-      this.$store.dispatch("getAllBrokenRealms"),
-      this.$store.dispatch("getAllDkhmCoffe")])
+      this.$store.dispatch("getAllFactions")
+      ])
   }
 }
 </script>

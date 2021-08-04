@@ -8,85 +8,67 @@
         <p>
           Puedes consultar la sigmaroteca, haciendo click <a href="https://ageofsigmar.fandom.com/es/wiki/Sigmaroteca" target="_blank" title="Sigmaroteca">aquí</a>
         </p> 
-        <h3>Consulta nuestros vídeos de lore</h3>
-        <ul>
-          <li>
-            <input type="checkbox" class="input_checkbox" id="broken_realms"/>
-            <label for="broken_realms">Broken Realms</label>
-            <ul class="background_data">
-              <li v-for="(broken_realms,index) in getBrokenRealms" :key="index">
-                <a :href="broken_realms.url" :title="broken_realms.title" target="_blank"> {{ broken_realms.title}}</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <input type="checkbox" class="input_checkbox" id="background"/>
-            <label for="background">Trasfondo</label>
-            <ul class="background_data">
-              <li v-for="(background,index) in getBackground" :key="index">
-                <a :href="background.url" :title="background.title" target="_blank"> {{ background.title}}</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <input type="checkbox" class="input_checkbox" id="dkhm_coffe"/>
-            <label for="dkhm_coffe">DKHM Café</label>
-            <ul class="background_data">
-               <li v-for="(dkhm_coffe,index) in getDkhmCoffe" :key="index">
-                <a :href="dkhm_coffe.url" :title="dkhm_coffe.title" target="_blank"> {{ dkhm_coffe.title}}</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/XFGDe7rLctc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Consulta nuestras listas de trasfondo de Age of Sigmar</h3>
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit urna nec dui hendrerit, vitae porta lorem pharetra. Etiam eu lacinia mi. Nam ante est, commodo ut iaculis sit amet, consectetur vel purus. Duis a velit laoreet, volutpat nibh ac, hendrerit ante. In auctor sit amet lorem ac feugiat. Proin ornare ligula massa, nec faucibus lacus tempus ut. In posuere orci elementum ex commodo, a suscipit ipsum ullamcorper. Nulla pharetra enim a nibh venenatis aliquet.
+        </p>        
     </div>
+    <ul>
+      <li :style="{ backgroundImage: 'url(https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/podcast_background.jpg?alt=media&token=f6b18cef-fac2-4447-9dab-4575772a9e3c)' }">
+        <div>
+          <p>Podcast</p>
+          <a href="https://www.youtube.com/playlist?list=PL3u7uk_4EFeX1z8DA15IM0UnouBcZy9ZS" title="Lista de Podcast" target="_blank">Ver aquí</a>
+        </div>
+      </li>
+      <li :style="{ backgroundImage: 'url(https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/lore_background.jpg?alt=media&token=5c59788f-7de3-432e-bba7-efcbb1dcada0)'}">
+        <div>
+          <p>Trasfondo</p>
+          <a href="https://www.youtube.com/watch?v=MbRYG5ePVYc&list=PL3u7uk_4EFeXoxUxbqCAAs92j0NSkytGa" title="Lista de Trasfondo" target="_blank">Trasfondo</a>
+        </div>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-import { mapGetters } from "vuex";
 export default {
   name: 'background',
   components: {
   },
-  computed:{
-    ...mapGetters(["getBackground","getBrokenRealms","getDkhmCoffe"]),
-  }
 }
 </script>
 
 <style scoped>
   .background{
-    padding:25px 15px;
+    padding:25px 15px 0;
   }
-  .background_data{
-    font-size: 15px;
-    font-weight: 300;
-    max-height: 0;
-    overflow: hidden;
-    transition: .5s;
-    -moz-opacity: 0;
-    -khtml-opacity: 0;
-    -webkit-opacity: 0;
-    opacity: 0;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
-    filter: alpha(opacity=0);
-    position: relative;
-    overflow: hidden;
-    transition: .5s ease-in;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  p{
+    font:300 16px/1.5 'Poppins',sans-serif;
+    margin:0;
+  }
+  h2,h3{
+    font:500 24px/1.5 'Poppins',sans-serif;
+  }
+  iframe{
+    width:100%;
+  }
+  ul{
+    margin:25px -15px 0;
+    display:flex;
+    flex-direction:column;
     align-items: center;
+    justify-content: center;
   }
-  input:checked  ~ .background_data{
-    max-height: 600px;
-    -moz-opacity: 1;
-    -khtml-opacity: 1;
-    -webkit-opacity: 1;
-    opacity: 1;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
-    filter: alpha(opacity=100);
-    padding-bottom: 25px;
+  ul > li {
+    width:100%;
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center center;
+  }
+  a{
+    color:#2c3e50;
+    text-decoration: none;
+    font:500 14px/1 'Poppins',sans-serif
   }
 </style>
