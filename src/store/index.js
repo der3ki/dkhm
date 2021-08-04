@@ -8,7 +8,12 @@ export default new Vuex.Store({
   state: {
     latestNews:[],
     allNews:[],
-    factions:{}
+    factions:{},
+    background:{
+      broken_realms:[],
+      background:[],
+      dkhm_coffe:[]
+    }
   },
   mutations: {
     setLatestNews(state,lastNews){
@@ -29,6 +34,15 @@ export default new Vuex.Store({
     },
     setFactions(state,factions){
       state.factions = factions
+    },
+    setBackground(state,allBackground){
+      state.background.background = allBackground
+    },
+    setBrokenRealms(state,allBrokenRealms){
+      state.background.broken_realms = allBrokenRealms
+    },
+    setDkhmCoffe(state,allDkhmCoffe){
+      state.background.dkhm_coffe = allDkhmCoffe
     }
   },
   getters:{
@@ -43,7 +57,10 @@ export default new Vuex.Store({
     },
     getFactionByName: (state) => (name)=>{
       return state.factions.factions ? state.factions.factions.find(faction => faction.name === name): ''
-    }
+    },
+    getBackground : (state) => state.background.background,
+    getBrokenRealms : (state) => state.background.broken_realms,
+    getDkhmCoffe: (state) => state.background.dkhm_coffe
   },
   actions: {
     async getLatestNews({ commit }) {
@@ -64,7 +81,6 @@ export default new Vuex.Store({
       axios
         .get('https://dkhm-api.herokuapp.com/api/news/getAllNews?limit='+params.limit+'&from='+params.from)
         .then((response)=>{
-          console.log(response.data.news)
           commit("setMoreNews",response.data.news)
         })
     },
@@ -73,6 +89,27 @@ export default new Vuex.Store({
         .get('https://dkhm-api.herokuapp.com/api/factions')
         .then((response)=>{
           commit("setFactions",response.data)
+        })
+    },
+    async getAllBackground({commit}){
+      axios
+        .get('https://dkhm-api.herokuapp.com/api/background/?gender=Trasfondo')
+        .then((response)=>{
+          commit("setBackground",response.data.background)
+        })
+    },
+    async getAllBrokenRealms({commit}){
+      axios
+        .get('https://dkhm-api.herokuapp.com/api/background/?gender=Broken_Realms')
+        .then((response)=>{
+          commit("setBrokenRealms",response.data.background)
+        })
+    },
+    async getAllDkhmCoffe({commit}){
+      axios
+        .get('https://dkhm-api.herokuapp.com/api/background/?gender=Podcast')
+        .then((response)=>{
+          commit("setDkhmCoffe",response.data.background)
         })
     },
   },
