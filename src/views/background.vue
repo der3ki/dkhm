@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <section>
     <Banner :home="false" title="Background" image="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/ageofsigmarmural.png?alt=media&token=fce2ebad-b15d-4aa7-bfe0-07a1f21c6f53"></Banner>
     <background/>
-  </div>
+  </section>
 </template>
 
 <script>

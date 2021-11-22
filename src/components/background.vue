@@ -43,9 +43,13 @@ export default {
   .background{
     padding:25px 15px 0;
   }
+  .background > div{
+    max-width: 1200px;
+    margin:0 auto;
+  }
   p{
     font:300 16px/1.5 'Poppins',sans-serif;
-    margin:0;
+    margin:20px 0;
   }
   h2,h3{
     font:500 24px/1.5 'Poppins',sans-serif;
@@ -66,9 +70,20 @@ export default {
     background-size: cover;
     background-position: center center;
   }
+  ul p{
+    color:#ffffff;
+  }
   a{
-    color:#2c3e50;
+    color:#ffffff;
     text-decoration: none;
     font:500 14px/1 'Poppins',sans-serif
+  }
+  @media(min-width:768px){
+    ul{
+      flex-direction: row;
+    }
+    iframe{
+      height: 500px;
+    }
   }
 </style>
