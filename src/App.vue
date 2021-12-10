@@ -22,7 +22,8 @@ export default {
       this.$store.dispatch("getAllNews",{limit:3,from:0}),
       this.$store.dispatch("getLatestNews"), 
       this.$store.dispatch("getAllFactions"),
-      this.$store.dispatch("getTeam",{limit:20,from:0})
+      this.$store.dispatch("getTeam",{limit:20,from:0}),
+      this.$store.dispatch("getArmies")
       ])
   }
 }

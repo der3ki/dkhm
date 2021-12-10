@@ -14,7 +14,8 @@ export default new Vuex.Store({
       background:[],
       dkhm_coffe:[]
     },
-    team:{}
+    team:{},
+    armies:[]
   },
   mutations: {
     setLatestNews(state,lastNews){
@@ -47,6 +48,9 @@ export default new Vuex.Store({
     },
     setTeam(state,team){
       state.team = team
+    },
+    setArmies(state,armies){
+      state.team = armies
     }
   },
   getters:{
@@ -65,7 +69,8 @@ export default new Vuex.Store({
     getBackground : (state) => state.background.background,
     getBrokenRealms : (state) => state.background.broken_realms,
     getDkhmCoffe: (state) => state.background.dkhm_coffe,
-    getTeam: (state) => state.team 
+    getTeam: (state) => state.team,
+    getArmies: (state) => state.armies 
   },
   actions: {
     async getLatestNews({ commit }) {
@@ -122,6 +127,13 @@ export default new Vuex.Store({
           .get("https://dkhm-api.herokuapp.com/api/team/")
           .then((response) => {
               commit("setTeam", response.data.team[0]);
+          });
+    },
+    async getArmies({ commit }) {
+      axios
+          .get("https://dkhm-api.herokuapp.com/api/armies/getArmies")
+          .then((response) => {
+              commit("setTeam", response.data);
           });
     }
   },
