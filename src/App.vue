@@ -21,7 +21,8 @@ export default {
     Promise.all([
       this.$store.dispatch("getAllNews",{limit:3,from:0}),
       this.$store.dispatch("getLatestNews"), 
-      this.$store.dispatch("getAllFactions")
+      this.$store.dispatch("getAllFactions"),
+      this.$store.dispatch("getTeam",{limit:20,from:0})
       ])
   }
 }
@@ -45,4 +46,11 @@ ul{
   list-style-type: none;
   padding:0;
 }
+p{
+    font:300 16px/1.5 'Poppins',sans-serif;
+    margin:20px 0;
+  }
+  h2,h3{
+    font:500 24px/1.5 'Poppins',sans-serif;
+  }
 </style>

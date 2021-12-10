@@ -64,13 +64,6 @@ export default {
     max-width: 1200px;
     margin:0 auto;
   }
-  p{
-    font:300 16px/1.5 'Poppins',sans-serif;
-    margin:20px 0;
-  }
-  h2,h3{
-    font:500 24px/1.5 'Poppins',sans-serif;
-  }
   iframe{
     width:100%;
   }
