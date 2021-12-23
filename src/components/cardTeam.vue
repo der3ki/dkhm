@@ -43,6 +43,7 @@ export default {
        flex-direction:row;
        align-items: center;
        flex-wrap: wrap;
+       justify-content: center;
     }
     .card__element{
        width:100%;
