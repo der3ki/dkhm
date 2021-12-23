@@ -50,7 +50,7 @@ export default new Vuex.Store({
       state.team = team
     },
     setArmies(state,armies){
-      state.team = armies
+      state.armies = armies.armies
     }
   },
   getters:{
@@ -133,7 +133,7 @@ export default new Vuex.Store({
       axios
           .get("https://dkhm-api.herokuapp.com/api/armies/getArmies")
           .then((response) => {
-              commit("setTeam", response.data);
+              commit("setArmies", response.data);
           });
     }
   },
