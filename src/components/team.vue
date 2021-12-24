@@ -2,14 +2,6 @@
     <div class="container">
         <h2>Equipo</h2>
         <p>{{getTeam.description}}</p>
-
-        <ul class="container__menu">
-            <li class="container__menu__list-item" v-for="armies in getArmies" :key="armies.id">
-                <button class="container__menu__list-item__button" @click="getArmyByPlayer(armies.id)">
-                    <img class="container__menu__list-item__button__image" :src="armies.img" :alt="armies.name" />
-                </button>
-            </li>
-        </ul>
         <cardTeam :players="players" class="container_players"/>
     </div>
 </template>
@@ -25,35 +17,16 @@ export default {
     data(){
         return{
             getPlayersByArmies:[],
-            loading: true,
-            armyWithoutPlayers: "Actualmente no hay jugadores en el equipo que juegen este ejército"
+
+           
         }
-    },
-    methods:{
-        getArmyByPlayer(id){
-            this.getPlayersByArmies = [];
-            this.getTeam.players.map(playerArmies=>{
-               playerArmies.armies.forEach(armiesPlayer=>{
-                   if(armiesPlayer.id === id) this.getPlayersByArmies.push(playerArmies) 
-               }) 
-            });
-            if(this.loading === true) this.loading = false;
-        },
-        returnTeam(){
-            return this.getTeam.players
-        }
-    },
-    created(){
-        
-       
     },
     computed:{
         ...mapGetters(["getTeam","getArmies"]),
         players(){
-            let players = this.getPlayersByArmies.length > 0 ? this.getPlayersByArmies : this.loading === true ? this.getTeam.players : [{emptyTitle:this.armyWithoutPlayers}]
-            return players;
+            return this.getTeam.players
         },
-       
+
     }
 }
 </script>

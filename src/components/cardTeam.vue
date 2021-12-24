@@ -10,6 +10,7 @@
                     <h4 class="card__element__subtitle">{{player.alias}}</h4>
                 </div>
                 <p class="card__element__description">{{player.description}}</p>
+                <p class="card__element__armies"><b>Ejércitos: </b><span v-for="armies in player.armies" :key="armies.id">{{ armies.name}}, </span></p>
             </div>
             <div v-else>
                 <div class="card__element_empty">
@@ -41,7 +42,7 @@ export default {
     .card{
        display:flex;
        flex-direction:row;
-       align-items: center;
+       align-items: flex-start;
        flex-wrap: wrap;
        justify-content: center;
     }
@@ -77,6 +78,10 @@ export default {
     .card__element_empty{
         text-align: center;
         width:100%;
+    }
+    .card__element__armies{
+        text-align: left;
+        padding:10px;
     }
    @media (min-width: 601px) {
         .card__element{
