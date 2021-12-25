@@ -5,18 +5,18 @@
             "positions":[
                 {
                     "number":1,
-                    "name": "Janemba69 ( Kirian )",
-                    "army": "Serafones - Colmillos de Sotek"
+                    "name": "Janemba69",
+                    "army": "Serafones: Colmillos de Sotek"
                 },
                 {
                     "number":2,
-                    "name": "der3ki ( Cristian )",
-                    "army": "Serafones - Cola de Dracothion"
+                    "name": "der3ki",
+                    "army": "Serafones: Cola de Dracothion"
                 },
                 {
                     "number":3,
-                    "name": "Javier Fernández ( Xavi )",
-                    "army": "Profundos Idoneth - Fuethan"
+                    "name": "Javier Fernández",
+                    "army": "Profundos Idoneth: Fuethan"
                 }
             ]
         },
@@ -25,12 +25,12 @@
             "positions":[
                 {
                     "number":1,
-                    "name": "der3ki ( Cristian )",
-                    "army": "Serafones - Colmillos de Sotek"
+                    "name": "der3ki",
+                    "army": "Serafones: Colmillos de Sotek"
                 },
                 {
                     "number":2,
-                    "name": "Jugger ( Dani )",
+                    "name": "Jugger",
                     "army": "Legión del primer príncipe"
                 }
             ]
@@ -40,8 +40,8 @@
             "positions":[
                 {
                     "number":1,
-                    "name": "Adrián Pérez ( Yoshu )",
-                    "army": "Hijos de Behemat - Breaker Tribe"
+                    "name": "Adrián Pérez",
+                    "army": "Hijos de Behemat: Breaker Tribe"
                 }
             ]
         }

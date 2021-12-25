@@ -1,26 +1,39 @@
 <template>
     <div class="container">
         <h2>Equipo</h2>
-        <p>{{getTeam.description}}</p>
+        <p class="container__description">{{getTeam.description}}</p>
         <div class="container__cards">
             <input type="checkbox" id="container__cards" class="input"/>
             <h3>Para ver más miembros del equipo, haz click <label for="container__cards"> aquí</label></h3>
             <cardTeam :players="players" class="container_players"/>
         </div>
         <h2>Palmarés del equipo</h2>
-        <div class="">
+        <div class="container__palmares">
             <input type="checkbox" id="container__cards" class="input"/>
+            <ul>
+                <li v-for="(titulos,index) in palmares.gt_individuales" :key="index">
+                    <h4>{{titulos.title}}</h4>
+                    <ul>
+                        <li class="container__palmares_positions">
+                            <div>Nombre</div>
+                            <div>Puesto</div>
+                            <div>Ejército</div>
+                        </li>
+                        <li v-for="(positions,index) in titulos.positions" :key="index" class="container__palmares_positions">
+                            <div class="container__palmares__podium__text">
+                                <p>{{positions.number}}</p>
+                            </div>
+                            <div class="container__palmares__podium__text">
+                                <p>{{positions.name}}</p>
+                            </div>
+                            <div class="container__palmares__podium__text">
+                                <p>{{ positions.army}}</p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <ul>
-            <li v-for="(titulos,index) in palmares.gt_individuales" :key="index">
-                {{titulos.title}}
-                <ul>
-                    <li v-for="(positions,index) in titulos.positions" :key="index">
-                        Puesto: {{positions.number}} Nombre: {{positions.name}} , Ejército: {{ positions.army}}
-                    </li>
-                </ul>
-            </li>
-        </ul>
     </div>
 </template>
 
@@ -52,7 +65,10 @@ export default {
 
 <style scoped>
     h3{
-        font:500 18px/1.5 'Poppins',sans-serif;
+        font:500 16px/1.5 'Poppins',sans-serif;
+    }
+    h4{
+        font-size:16px;
     }
     #container__cards{
         position:absolute;
@@ -64,6 +80,9 @@ export default {
         margin:0 auto;
         max-width: 1200px;
         padding:0 20px;
+    }
+    .container__description{
+        font-size:18px
     }
     .container_players{
         max-height: 0;
@@ -112,5 +131,29 @@ export default {
         -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=1);
         filter: alpha(opacity=1);
         margin:50px 0 20px;
+    }
+    .container__palmares{
+        font:500 18px/1.5 'Poppins',sans-serif;
+    }
+    .container__palmares_positions{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin:20px 0;
+    }
+    .container__palmares__podium__text{
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+    }
+    .container__palmares_positions div{
+        width: 33%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .container__palmares__podium__text p{
+        margin:0;
     }
 </style>
