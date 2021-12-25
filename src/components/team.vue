@@ -2,13 +2,32 @@
     <div class="container">
         <h2>Equipo</h2>
         <p>{{getTeam.description}}</p>
-        <cardTeam :players="players" class="container_players"/>
+        <div class="container__cards">
+            <input type="checkbox" id="container__cards" class="input"/>
+            <h3>Para ver más miembros del equipo, haz click <label for="container__cards"> aquí</label></h3>
+            <cardTeam :players="players" class="container_players"/>
+        </div>
+        <h2>Palmarés del equipo</h2>
+        <div class="">
+            <input type="checkbox" id="container__cards" class="input"/>
+        </div>
+        <ul>
+            <li v-for="(titulos,index) in palmares.gt_individuales" :key="index">
+                {{titulos.title}}
+                <ul>
+                    <li v-for="(positions,index) in titulos.positions" :key="index">
+                        Puesto: {{positions.number}} Nombre: {{positions.name}} , Ejército: {{ positions.army}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
 import cardTeam from './cardTeam.vue';
+import palmares from '../palmares.json'
 export default {
     name: 'Team',
     components:{
@@ -17,7 +36,7 @@ export default {
     data(){
         return{
             getPlayersByArmies:[],
-
+            palmares: palmares
            
         }
     },
@@ -32,9 +51,34 @@ export default {
 </script>
 
 <style scoped>
+    h3{
+        font:500 18px/1.5 'Poppins',sans-serif;
+    }
+    #container__cards{
+        position:absolute;
+        top:0;
+        left:-9999px;
+        z-index: -12;
+    }
     .container{
         margin:0 auto;
         max-width: 1200px;
+        padding:0 20px;
+    }
+    .container_players{
+        max-height: 0;
+        overflow: hidden;
+        transition: .5s;
+        -moz-opacity: 0;
+        -khtml-opacity: 0;
+        -webkit-opacity: 0;
+        opacity: 0;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+        filter: alpha(opacity=0);
+        position: relative;
+        overflow: hidden;
+        transition: .5s ease-in;
+        margin:0;
     }
     .container__menu{
         display:flex;
@@ -57,7 +101,16 @@ export default {
     .container__menu__list-item__button__image{
         width:100%;
     }
-    .container_players{
+  
+    #container__cards:checked ~ .container_players{
+        max-height: 3000px;
+        transition: .5s ease-in;
+        -moz-opacity: 1;
+        -khtml-opacity: 1;
+        -webkit-opacity: 1;
+        opacity: 1;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=1);
+        filter: alpha(opacity=1);
         margin:50px 0 20px;
     }
 </style>

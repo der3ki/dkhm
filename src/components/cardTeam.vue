@@ -10,7 +10,14 @@
                     <h4 class="card__element__subtitle">{{player.alias}}</h4>
                 </div>
                 <p class="card__element__description">{{player.description}}</p>
-                <p class="card__element__armies"><b>Ejércitos: </b><span v-for="armies in player.armies" :key="armies.id">{{ armies.name}}, </span></p>
+                <p class="card__element__armies">
+                    <b>Ejércitos: </b>
+                    <span v-for="(armies,index) in player.armies" :key="armies.id">
+                        {{ armies.name}} 
+
+                        <span v-if="index != Object.keys(player.armies).length - 1">,</span>
+                    </span>
+                </p>
             </div>
             <div v-else>
                 <div class="card__element_empty">

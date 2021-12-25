@@ -1,0 +1,49 @@
+{
+    "gt_individuales":[
+        {
+            "title":"1ER 'CÓNCLAVE' LOGIA CARTHAGINENSIS",
+            "positions":[
+                {
+                    "number":1,
+                    "name": "Janemba69 ( Kirian )",
+                    "army": "Serafones - Colmillos de Sotek"
+                },
+                {
+                    "number":2,
+                    "name": "der3ki ( Cristian )",
+                    "army": "Serafones - Cola de Dracothion"
+                },
+                {
+                    "number":3,
+                    "name": "Javier Fernández ( Xavi )",
+                    "army": "Profundos Idoneth - Fuethan"
+                }
+            ]
+        },
+        {
+            "title":"DKHM BYE 2ND",
+            "positions":[
+                {
+                    "number":1,
+                    "name": "der3ki ( Cristian )",
+                    "army": "Serafones - Colmillos de Sotek"
+                },
+                {
+                    "number":2,
+                    "name": "Jugger ( Dani )",
+                    "army": "Legión del primer príncipe"
+                }
+            ]
+        },
+        {
+            "title":"Torneo DKHM - Bilbao",
+            "positions":[
+                {
+                    "number":1,
+                    "name": "Adrián Pérez ( Yoshu )",
+                    "army": "Hijos de Behemat - Breaker Tribe"
+                }
+            ]
+        }
+    ]
+}
