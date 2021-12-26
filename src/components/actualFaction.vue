@@ -37,15 +37,16 @@
                         <h3><label :for="'faction_'+index">{{subfaction.subfaction_name}}</label></h3>
                         
                         <div class="subfaction">
+                            <p class="hability">{{subfaction.description}}</p>
                             <div class="section_subfaction" v-if="subfaction.hability">
-                                <p class="hability">Habilidad</p>
+                                <!-- <p class="hability">Habilidad</p>
                                 <p>
                                     <span class="hability_name">{{subfaction.hability.title.name}}: </span>
                                     <span class="hability_descrip">{{subfaction.hability.title.descrip}}</span>
                                 </p>
-                                <p v-html="subfaction.hability.body"></p>
+                                <p v-html="subfaction.hability.body"></p>-->
                             </div>
-                            <div class="section_subfaction" v-if="subfaction.command_ability">
+                            <!-- <div class="section_subfaction" v-if="subfaction.command_ability">
                                 <p class="hability">Habilidad de mando</p>
                                 <p>
                                     <span class="hability_name">{{subfaction.command_ability.title.name}}: </span>
@@ -70,8 +71,8 @@
                                     <span class="hability_descrip">{{subfaction.artefact.title.descrip}}</span>
                                 </p>
                             <p v-html="subfaction.artefact.body"></p>
-                            </div>
-                        </div>
+                            </div> -->
+                        </div> 
                     </li>
                 </ul>
             </div>
