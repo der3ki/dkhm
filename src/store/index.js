@@ -63,8 +63,8 @@ export default new Vuex.Store({
     getFactionByAlliance: (state) => (name) => {
       return  state.factions.factions ? state.factions.factions.filter(faction =>faction.grandAlliance.toLowerCase() === name): ''
     },
-    getFactionByName: (state) => (name)=>{
-      return state.factions.factions ? state.factions.factions.find(faction => faction.name === name): ''
+    getFactionByName: (state) => (url)=>{
+      return state.factions.factions ? state.factions.factions.find(faction => faction.url === url): ''
     },
     getBackground : (state) => state.background.background,
     getBrokenRealms : (state) => state.background.broken_realms,

@@ -14,7 +14,7 @@
                     <ul>
                         <li v-for="faction in getOrderFactions" :key="faction.name">
                             <router-link :to="{
-                                path: '/faction/'+faction.name
+                                path: '/faction/'+faction.url
                                 }" :title="faction.name">
                                 <img :src="faction.logo_img"/>
                             </router-link>
@@ -32,7 +32,7 @@
                     <ul>
                         <li v-for="faction in getChaosFactions" :key="faction.name">
                             <router-link :to="{
-                                path: '/faction/'+faction.name
+                                path: '/faction/'+faction.url
                                 }" :title="faction.name">
                                 <img :src="faction.logo_img"/>
                             </router-link>
@@ -50,7 +50,7 @@
                     <ul>
                         <li v-for="faction in getDeathFactions" :key="faction.name">
                             <router-link :to="{
-                                path: '/faction/'+faction.name
+                                path: '/faction/'+faction.url
                                 }" :title="faction.name">
                                 <img :src="faction.logo_img"/>
                             </router-link>
@@ -68,7 +68,7 @@
                     <ul>
                         <li v-for="faction in getDestructionFactions" :key="faction.name">
                             <router-link :to="{
-                                path:'/faction/'+faction.name}" :title="faction.name">
+                                path:'/faction/'+faction.url}" :title="faction.name">
                                 <img :src="faction.logo_img"/>
                             </router-link>
                         </li>
