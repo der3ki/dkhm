@@ -9,6 +9,7 @@ import Background from '../views/background.vue'
 import Team from '../views/team.vue'
 import Sponsors from '../views/sponsors.vue'
 import NotFoundComponent from '../views/notFoundComponent.vue'
+import circuitoNacional from '../views/circuitoNacional.vue'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,7 @@ const routes = [
     { path: '/background', name: 'Background', component: Background },
     { path: '/team', name: 'Team', component: Team },
     { path: '/sponsors', name: 'Sponsors', component: Sponsors },
+    { path: '/circuito_nacional', name: 'CircuitoNacional', component: circuitoNacional },
     { path: '*', component: NotFoundComponent }
 ]
 

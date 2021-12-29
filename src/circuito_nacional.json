@@ -1,0 +1,133 @@
+{
+    "circuito_individual":[
+        {
+            "title":"Bilbohammer",
+            "formato": "Torneo individual",
+            "ubicaciones":"Bilbao",
+            "Fecha": "27/11/21"
+        },
+        {
+            "title":"Alea",
+            "formato": "Torneo individual",
+            "ubicaciones":"Lleida",
+            "Fecha": "04/12/21"
+        },
+        {
+            "title":"Goblin Trader",
+            "formato": "Torneo individual",
+            "ubicaciones":"Zaragoza",
+            "Fecha": "12/12/2021"
+        },
+        {
+            "title":"Kingdom Wargames",
+            "formato": "Torneo individual",
+            "ubicaciones":"Madrid",
+            "Fecha": "29/01/22"
+        },
+        {
+            "title":"La fortaleza",
+            "formato": "Torneo individual",
+            "ubicaciones":"A Coruña.",
+            "Fecha": "05/02/2022"
+        },
+        {
+            "title":"Zamora",
+            "formato": "Torneo individual",
+            "ubicaciones":"Zamora",
+            "Fecha": "26/02/2022"
+        },
+        {
+            "title":"Freakfactory",
+            "formato": "Torneo individual",
+            "ubicaciones":"Málaga/Fuengirola ",
+            "Fecha": "26/02/2021"
+        },
+        {
+            "title":"GTS Valencia",
+            "formato": "Torneo individual",
+            "ubicaciones":"",
+            "Fecha": "20/02/2022"
+        },
+        {
+            "title":"Mono Araña",
+            "formato": "Torneo individual",
+            "ubicaciones":"Madrid",
+            "Fecha": "06/03/2022"
+        },
+        {
+            "title":"Vientos de Magia",
+            "formato": "Torneo individual",
+            "ubicaciones":"Conil - Cádiz",
+            "Fecha": "03/04/22"
+        },
+        {
+            "title":"Quimera",
+            "formato": "Torneo individual",
+            "ubicaciones":"Conil - Cádiz",
+            "Fecha": "23/04/22 - 24/04/2022"
+        },
+        {
+            "title":"Pucela Wargames",
+            "formato": "Torneo individual",
+            "ubicaciones":"Valladolid ",
+            "Fecha": "21/05/2022"
+        },
+        {
+            "title":"Ordo Navarrorum",
+            "formato": "Torneo individual",
+            "ubicaciones":"Pamplona (Navarra)  ",
+            "Fecha": "04/06/2022"
+        },
+        {
+            "title":"La Mazmorra de Málaga (Mazmorra wargames)",
+            "formato": "Torneo individual",
+            "ubicaciones":"Pamplona (Navarra)  ",
+            "Fecha": "24/07/2022"
+        },
+        {
+            "title":"Kingdom Wargames",
+            "formato": "Torneo individual - FINAL",
+            "ubicaciones":"Madrid ",
+            "Fecha": "Septiembre"
+        }
+    ],
+    "circuito_equipos":[
+        {
+            "title":"Quimera Team Gt ",
+            "formato": "Torneo por equipos",
+            "ubicaciones":"Cartagena",
+            "Fecha": "30/10/2021 - 31/10/2021"
+        },
+        {
+            "title":"Freakfactory Gt",
+            "formato": "Torneo por equipos",
+            "ubicaciones":"Málaga/Fuengirola",
+            "Fecha": "20/11/2021 y 21/11/2021"
+        },
+        {
+            "title":"Batalla por el Paso",
+            "formato": "Torneo por equipos",
+            "ubicaciones":"Barcelona",
+            "Fecha": "19/02/2022"
+        },
+        {
+            "title":"Chicken Cup",
+            "formato": "Torneo por equipos",
+            "ubicaciones":"Mallorca",
+            "Fecha": "04/03/22 - 05/03/2022"
+        },
+        {
+            "title":"Kingdom Wargames",
+            "formato": "Torneo por equipos",
+            "ubicaciones":"Madrid",
+            "Fecha": "02/04/2022"
+        },
+        {
+            "title":"Gijón",
+            "formato": "Torneo por equipos",
+            "ubicaciones":"Gijón",
+            "Fecha": "02/04/2022"
+        }
+    ]
+    
+}
