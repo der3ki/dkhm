@@ -28,7 +28,8 @@
             "title":"La fortaleza",
             "formato": "Torneo individual",
             "ubicaciones":"A Coruña.",
-            "Fecha": "05/02/2022"
+            "Fecha": "05/02/2022",
+            "mail":"Fer.cranes@gmail.com"
         },
         {
             "title":"Zamora",
@@ -43,10 +44,11 @@
             "Fecha": "26/02/2021"
         },
         {
-            "title":"GTS Valencia",
+            "title":"La Batalla por Valentia",
             "formato": "Torneo individual",
             "ubicaciones":"",
-            "Fecha": "20/02/2022"
+            "Fecha": "20/02/2022",
+            "mail":"ListasAoSValencia@gmail.com"
         },
         {
             "title":"Mono Araña",
@@ -114,7 +116,8 @@
             "title":"Chicken Cup",
             "formato": "Torneo por equipos",
             "ubicaciones":"Mallorca",
-            "Fecha": "04/03/22 - 05/03/2022"
+            "Fecha": "04/03/22 - 05/03/2022",
+            "mail": "pollodeguerra86@gmail.com"
         },
         {
             "title":"Kingdom Wargames",
