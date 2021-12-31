@@ -47,8 +47,10 @@ export default {
 
 <style scoped>
     img{
-        display:block;
-        width:100%;
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-height: 350px;
     }
     .card{
        display:flex;
