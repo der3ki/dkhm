@@ -21,13 +21,23 @@
                     </li>
                 </ul>
             </div>
+             <div class="enhancements faction_prop" v-if="getFactionByName.battle_trait">
+                <h2>{{getFactionByName.battle_trait.name}}</h2>
+                <p v-for="(body,index) in getFactionByName.battle_trait.body" :key="index">
+                    {{ body }}
+                </p>
+            </div>
             <div class="enhancements faction_prop" v-if="getFactionByName.enhancements">
                 <h2>{{getFactionByName.enhancements.name}}</h2>
-                <p>{{getFactionByName.enhancements.body}}</p>
+                <p v-for="(body,index) in getFactionByName.enhancements.body" :key="index">
+                    {{ body }}
+                </p>
             </div>
             <div class="tactics faction_prop" v-if="getFactionByName.tacticts">
                 <h2>{{getFactionByName.tacticts.name}}</h2>
-                <p> {{getFactionByName.tacticts.body}}</p>
+                <p v-for="(body,index) in getFactionByName.tacticts.body" :key="index">
+                    {{ body }}
+                </p>
             </div>
             <div class="subfactions faction_prop">
                 <h2>{{getFactionByName.subfactions.name}}</h2>
