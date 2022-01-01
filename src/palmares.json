@@ -4,17 +4,17 @@
             "title":"1ER 'CÓNCLAVE' LOGIA CARTHAGINENSIS",
             "positions":[
                 {
-                    "number":1,
+                    "number":"https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/Oro.png?alt=media&token=1d966856-bbbc-4c4d-a53e-66948e4f918d",
                     "name": "Janemba69",
                     "army": "Serafones: Colmillos de Sotek"
                 },
                 {
-                    "number":2,
+                    "number":"https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/Plata.png?alt=media&token=8dd26aa6-afbc-4edf-b014-06a876fb664b",
                     "name": "der3ki",
                     "army": "Serafones: Cola de Dracothion"
                 },
                 {
-                    "number":3,
+                    "number":"https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/Bronce.png?alt=media&token=76dfa1ac-9d81-43ac-98d0-ac44fae51fc0",
                     "name": "Javier Fernández",
                     "army": "Profundos Idoneth: Fuethan"
                 }
@@ -24,12 +24,12 @@
             "title":"DKHM BYE 2ND",
             "positions":[
                 {
-                    "number":1,
+                    "number":"https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/Oro.png?alt=media&token=1d966856-bbbc-4c4d-a53e-66948e4f918d",
                     "name": "der3ki",
                     "army": "Serafones: Colmillos de Sotek"
                 },
                 {
-                    "number":2,
+                    "number":"https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/Plata.png?alt=media&token=8dd26aa6-afbc-4edf-b014-06a876fb664b",
                     "name": "Jugger",
                     "army": "Legión del primer príncipe"
                 }
@@ -39,7 +39,7 @@
             "title":"Torneo DKHM - Bilbao",
             "positions":[
                 {
-                    "number":1,
+                    "number":"https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/Oro.png?alt=media&token=1d966856-bbbc-4c4d-a53e-66948e4f918d",
                     "name": "Adrián Pérez",
                     "army": "Hijos de Behemat: Breaker Tribe"
                 }
