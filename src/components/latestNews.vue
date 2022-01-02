@@ -101,6 +101,7 @@ export default {
   }
   .news_home > article > section > ul > li > div > h4{
     margin:0;
+    min-height: 35px;
   }
   .news_home > article > section > ul > li > div > p{
     color:#888888;
@@ -142,7 +143,8 @@ export default {
   }
   @media (min-width:992px){
     .news_home > article > section > ul > li{
-      width: calc(33% - 30px)
+      width: calc(33% - 30px);
+      min-height: 415px;
     }
     .news_home > article > section > ul > li > img{
       height: 22vh;

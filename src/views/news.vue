@@ -8,7 +8,7 @@
               <img :src="news.img" :alt="news.title"/>
               <div>
                 
-                <h2> {{new Date(news.createdat).getDate()}} - {{ new Date(news.createdat).getMonth()+1 }} - {{ new Date(news.createdat).getFullYear()}} </h2>
+                <h2> {{new Date(news.createdat).getDate() >= 9 ? new Date(news.createdat).getDate() : '0'+new Date(news.createdat).getDate()}} - {{ new Date(news.createdat).getMonth()+1 >= 10 ? new Date(news.createdat).getMonth()+1 : '0'+(new Date(news.createdat).getMonth()+1)}} - {{ new Date(news.createdat).getFullYear()}} </h2>
                 <h3> {{ news.title }}</h3>
                 <p> {{ news. description}}</p>
               </div>

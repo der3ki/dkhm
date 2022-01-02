@@ -87,10 +87,13 @@ export default {
         text-shadow: 0px 0px 10px rgb(0 0 0 / 35%);
         position: relative;
         z-index: 12;
-        margin-top: 70px;
+        margin-top: 30px;
+        max-width: 600px;
     }
-    .banner > div > button{
-
+    @media(min-width:485px){
+        .banner > div > h1{
+            margin: 70px auto 30px;
+        }
     }
     @media(min-width:601px){
         .banner{
@@ -103,10 +106,12 @@ export default {
         }
         .banner > div >h1{
             font-size: 3.7em;
-            line-height: 3.7em;
             position: relative;
             z-index: 12;
-            margin-top:60px;
+            line-height: 1.5em;
+            padding: 20px 0 100px;
+            max-width: 800px;
+            margin: 0 auto;
         }
         .banner.home > div > h1{
             margin-top: 180px;
