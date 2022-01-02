@@ -9,8 +9,13 @@
                     <div>
                         <h1>DKHM Wargames</h1>
                         <p>
-                            DKHM es un canal dedicado a los Wargames, concretamente a los universos de Warhammer y, más aún, a Age of Sigmar.
-                            Síguenos, ya seas de Sigmar o Nagash (o de Khorne, o de Gorkamorka, o de Archaon, o de...) y disfrutemos este viaje por los Reinos Mortales.
+                            Estrenamos web dkhmita para ampliar horizontes e intentar manter informada a la comunidad no solo de nuestro último contenido en YouTube y Twitch, sino para traeros info de torneos, análisis de facción, que se irán actualizando, para poder leer con calma, info de nuestro equipo, noticias... Y todo aquello cuanto tenga cabida en nuestros Reinos Mortales.
+                        </p>
+                        <p>
+                            Esperemos que disfrutéis está aventura que comenzamos aquí, y no perdáis de vista a la web ya que irá mejorando y ampliándose poco a poco.
+                        </p>
+                        <p>
+                            Así que... nada... Un saludo, y nos vemos de nuevo en Dkhm.
                         </p>
                         <router-link to="/team" title="Leer más">
                             Leer más
