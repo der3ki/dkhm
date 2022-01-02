@@ -1,6 +1,6 @@
 <template>
     <ul class="card"> 
-        <li v-for="player in players" :key="player._id" class="card__element" :class="player.emptyTitle? 'card__element_empty':''">
+        <li v-for="(player,index) in players" :key="index" class="card__element" :class="player.emptyTitle? 'card__element_empty':''">
             <div v-if="!player.emptyTitle">
                 <div class="card__element__image">
                     <img :src="player.image" alt="" />
@@ -49,8 +49,7 @@ export default {
     img{
         display: block;
         width: 100%;
-        height: 100%;
-        max-height: 350px;
+        height: 220px;
     }
     .card{
        display:flex;
@@ -61,7 +60,7 @@ export default {
     }
     .card__element{
        width:100%;
-       margin:20px;
+       margin:10px;
        text-align: center;
     }
     .card__element__name{
@@ -103,6 +102,9 @@ export default {
         }
          .card__element_empty{
             width:100%;
+        }
+        img{
+            height:350px;
         }
     }
 </style>

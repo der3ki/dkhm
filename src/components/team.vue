@@ -3,7 +3,7 @@
         <h2>Equipo</h2>
         <p class="container__description">{{getTeam.description}}</p>
         <div class="container__cards">
-            <input type="checkbox" id="container__cards" class="input"/>
+            <input type="checkbox" id="container__cards" class="input" checked/>
             <h3>Para ver más miembros del equipo, haz click <label for="container__cards"> aquí</label></h3>
             <cardTeam :players="players" class="container_players"/>
         </div>
@@ -85,15 +85,15 @@ export default {
     .container{
         margin:0 auto;
         max-width: 1200px;
-        padding:0 20px;
+        padding:0 15px;
     }
     .container__description{
         font-size:18px
     }
     .container_players{
-        max-height: 0;
+        height: 0;
         overflow: hidden;
-        transition: .5s;
+        transition: .8s ease-in;
         -moz-opacity: 0;
         -khtml-opacity: 0;
         -webkit-opacity: 0;
@@ -128,8 +128,8 @@ export default {
     }
   
     #container__cards:checked ~ .container_players{
-        max-height: 3000px;
-        transition: .5s ease-in;
+        height: auto;
+        transition: .8s ease-in;
         -moz-opacity: 1;
         -khtml-opacity: 1;
         -webkit-opacity: 1;
