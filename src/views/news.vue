@@ -92,7 +92,7 @@ export default {
     text-align:left;
   }
   h2{
-    margin: 50px 0 15px;
+    margin: 15px 0;
     font-size:10px;
   }
   h3{
@@ -108,6 +108,11 @@ export default {
     li{
       max-width:350px;
       margin: 0 30px 30px;
+    }
+  }
+  @media(min-width:992px){
+    img{
+      height: 262px;
     }
   }
 </style>

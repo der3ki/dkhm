@@ -106,6 +106,7 @@ export default {
   .news_home > article > section > ul > li > div > p{
     color:#888888;
     font-size:12px;
+    min-height: 55px;
   }
   .news_home > article > section > ul > li > div > a{
     display:flex;
