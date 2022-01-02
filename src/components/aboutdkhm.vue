@@ -99,7 +99,7 @@ export default {
     @media(min-width:768px){
         .about_dkhm > div > article{
             flex-direction:row;
-            align-items: flex-start;
+            align-items: center;
         }
         .about_dkhm > div > article > header, .about_dkhm > div > article > section{
             width:50%;
