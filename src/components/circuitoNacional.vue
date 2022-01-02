@@ -70,7 +70,7 @@ export default {
   .container{
     margin: 0 auto;
     max-width: 1200px;
-    padding: 20px;
+    padding: 20px 15px;
   }
   .list{
     display:flex;
@@ -100,7 +100,7 @@ export default {
         text-align:left;
         padding: 10px;
         font:300 16px/1.5 'Poppins',sans-serif;
-        max-width:450px;
+        min-width:450px;
         margin: 0 auto;
 
     }
