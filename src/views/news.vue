@@ -15,7 +15,7 @@
             </router-link>
           </li>
       </ul>
-      <button @click="loadMoreNews()"> Mostrar más </button>
+      <!-- <button @click="loadMoreNews()"> Mostrar más </button> -->
     </div>
   </section>
 </template>
