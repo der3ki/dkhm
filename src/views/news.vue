@@ -98,6 +98,7 @@ export default {
   h3{
     margin: 20px 0;
     font-size:20px;
+    min-height: 72px;
   }
   p{
     margin:20px 0;
