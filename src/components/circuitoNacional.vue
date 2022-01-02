@@ -101,6 +101,7 @@ export default {
         padding: 10px;
         font:300 16px/1.5 'Poppins',sans-serif;
         max-width:450px;
+        margin: 0 auto;
 
     }
     .container__palmares_positions div{
@@ -111,5 +112,23 @@ export default {
         word-break: break-word;
         font-size:13px;
     }
-
+    @media(min-width:768px){
+      .container_gt{
+        overflow-x: hidden;
+      }
+      .container__palmares_positions{
+        max-width: 600px;
+        width: 100%;
+        border-left:1px solid #404044;
+        border-right: 1px solid #404044;
+      }
+      .container__palmares_positions div{
+        font-size:14px;
+      }
+    }
+    @media(min-width: 1024px){
+      .container__palmares_positions{
+        max-width: 800px;
+      }
+    }
 </style>
