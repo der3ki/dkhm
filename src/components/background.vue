@@ -2,16 +2,8 @@
   <div class="background">
     <div>
       <div>
-        <h2>Bienvenidos a la sección de trasfondo</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-          hendrerit urna nec dui hendrerit, vitae porta lorem pharetra. Etiam eu
-          lacinia mi. Nam ante est, commodo ut iaculis sit amet, consectetur vel
-          purus. Duis a velit laoreet, volutpat nibh ac, hendrerit ante. In
-          auctor sit amet lorem ac feugiat. Proin ornare ligula massa, nec
-          faucibus lacus tempus ut. In posuere orci elementum ex commodo, a
-          suscipit ipsum ullamcorper. Nulla pharetra enim a nibh venenatis
-          aliquet.
+          Este es nuestra biblioteca, nuestra "Sigmaroteca", donde podrás encontrar el trasfondo y cronología de Age of Sigmar y de todas las facciones que luchan por sus metas en los 8 Reinos Mortales.
         </p>
         <p>
           Puedes consultar la sigmaroteca, haciendo click
@@ -41,8 +33,8 @@
           aliquet.
         </p>
       </div>
-      <bannerColumn />
     </div>
+    <bannerColumn />
   </div>
 </template>
 
@@ -66,6 +58,7 @@ export default {
   }
   iframe{
     width:100%;
+    min-height: 50vh;
   }
   ul{
     margin:25px -15px 0;
@@ -94,6 +87,7 @@ export default {
     }
     iframe{
       height: 500px;
+      min-height: 70vh;
     }
   }
 </style>

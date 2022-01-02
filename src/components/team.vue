@@ -78,10 +78,9 @@ export default {
         margin-top:50px;
     }
     #container__cards, .input{
-        position:absolute;
+        position: fixed;
         top:0;
-        left:-9999px;
-        z-index: -12;
+        left:-500px;
     }
     .container{
         margin:0 auto;
@@ -213,6 +212,9 @@ export default {
         h4{
             margin-top:0;
         }
+        .container{
+            min-height: 600px;
+        }
         .container__palmares{
             font-size:18px;
         }
@@ -226,5 +228,6 @@ export default {
         .container__palmares__img{
             margin:0;
         }
+        
     }
 </style>
