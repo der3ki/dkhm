@@ -94,6 +94,7 @@ export default {
     .card__element__armies{
         text-align: left;
         padding:10px;
+        font-size:14px;
     }
    @media (min-width: 601px) {
         .card__element{
