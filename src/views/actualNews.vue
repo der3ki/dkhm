@@ -62,6 +62,7 @@ h2{
 h3{
   color:#000000;
   font-size:16px;
+  min-height: 72px;
 }
 p,div{
   font-size:14px;
@@ -96,6 +97,13 @@ p.outstanding:after, .news_detail >>> p.outstanding:after{
   font-weight: 500;
   font-size:14px;
 }
+.news_detail >>> img{
+  width:100%;
+}
+.news_detail >>> iframe{
+    height: 40vh;
+    width:100%;
+  }
 
 @media (min-width:992px){
   .news_detail > div{
@@ -121,6 +129,9 @@ p.outstanding:after, .news_detail >>> p.outstanding:after{
   }
   .news_detail > div.news_home{
     max-width: 1200px;
+  }
+  .news_detail >>> iframe{
+    height: 40vh;
   }
 }
 </style>
