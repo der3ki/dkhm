@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="circuitoNacional">
         <div class="container">
           <p class="container__description">
             Este proyecto no habría sido posible sin la colaboración cómo esta. Una comunidad en la que tú, que lees esto, eres una pieza imprescindible de su motor. Gracias por todo tu apoyo
@@ -13,7 +13,7 @@
             </li>
             <li class="container__palmares_positions container_palmares__header">
               <div>Torneo</div>
-              <div>Localización</div>
+              <div>Lugar</div>
               <div>Fecha</div>
               <div>Correo</div>
             </li>
@@ -26,13 +26,13 @@
               </div>
             </li>
           </ul>
-          <ul>
+          <ul class="container_gt">
             <li>
               <h3>Circuito por equipos</h3>
             </li>
               <li class="container__palmares_positions container_palmares__header">
               <div>Torneo</div>
-              <div>Localización</div>
+              <div>Lugar</div>
               <div>Fecha</div>
               <div>Correo</div>
             </li>
@@ -63,7 +63,10 @@ export default {
 </script>
 
 <style scoped>
- 
+  .circuitoNacional{
+    position: relative;
+    overflow: hidden;
+  }
   .container{
     margin: 0 auto;
     max-width: 1200px;
@@ -85,6 +88,8 @@ export default {
   }
   .container_gt{
     margin:50px 0;
+    position: relative;
+    overflow-x: scroll;
   }
   .container__palmares_positions{
         display:flex;
@@ -95,6 +100,8 @@ export default {
         text-align:left;
         padding: 10px;
         font:300 16px/1.5 'Poppins',sans-serif;
+        max-width:450px;
+
     }
     .container__palmares_positions div{
         width: 25%;
@@ -102,6 +109,7 @@ export default {
         box-sizing: border-box;
         text-align: left;
         word-break: break-word;
+        font-size:13px;
     }
 
 </style>
