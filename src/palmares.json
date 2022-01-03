@@ -36,12 +36,27 @@
             ]
         },
         {
-            "title":"Torneo DKHM - Bilbao",
+            "title":"Torneo DKHM - Bilbohammer (Bilbao)",
             "positions":[
                 {
                     "number":"https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/Oro.png?alt=media&token=1d966856-bbbc-4c4d-a53e-66948e4f918d",
                     "name": "Adrián Pérez",
                     "army": "Hijos de Behemat: Breaker Tribe"
+                }
+            ]
+        },
+        {
+            "title":"Torneo DKHM - Alea (Lleida)",
+            "positions":[
+                {
+                    "number":"https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/Oro.png?alt=media&token=1d966856-bbbc-4c4d-a53e-66948e4f918d",
+                    "name": "Lalo",
+                    "army": "Hijos de Behemat: Breaker Tribe"
+                },
+                {
+                    "number":"https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/Bronce.png?alt=media&token=76dfa1ac-9d81-43ac-98d0-ac44fae51fc0",
+                    "name": "der3ki",
+                    "army": "Serafones: Colmillos de Sotek"
                 }
             ]
         },
