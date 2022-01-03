@@ -2,7 +2,7 @@
     <div class="banner_sm">
         <article class="patreon">
           <header>
-              <h5>Haz una donación al canal con patreon</h5>
+              <h5>Haz una donación al canal con patreons</h5>
           </header>
           <section>
             <a href="https://www.patreon.com/dkhm" target="_blank" title="Accede a Patreon" >Click aquí</a>
