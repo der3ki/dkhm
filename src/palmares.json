@@ -44,6 +44,26 @@
                     "army": "Hijos de Behemat: Breaker Tribe"
                 }
             ]
+        },
+        {
+            "title":"GTS la era de la bestia",
+            "positions":[
+                {
+                    "number":"https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/Oro.png?alt=media&token=1d966856-bbbc-4c4d-a53e-66948e4f918d",
+                    "name": "Bitty",
+                    "army": "Ironjawz"
+                }
+            ]
+        },
+        {
+            "title":"Torneo AoS Black Sunday",
+            "positions":[
+                {
+                    "number":"https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/Oro.png?alt=media&token=1d966856-bbbc-4c4d-a53e-66948e4f918d",
+                    "name": "Bitty",
+                    "army": "Ironjawz"
+                }
+            ]
         }
     ]
 }
