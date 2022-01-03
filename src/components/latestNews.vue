@@ -148,7 +148,7 @@ export default {
       min-height: 415px;
     }
     .news_home > article > section > ul > li > img{
-      height: 22vh;
+      height: 28vh;
     }
   }
 </style>
