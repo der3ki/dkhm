@@ -1,18 +1,16 @@
 <template>
     <div class="banner_sm">
-        <article href="#" title="Patreon" class="patreon">
+        <article href="https://www.patreon.com/dkhm" target="_blank" title="Accede a Patreon" class="patreon">
           <header>
               <h5>Haz una donación al canal con patreon</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </header>
           <section>
             <a href="" title="">Click aquí</a>
           </section>
         </article>
-        <article href="#" title="Patreon" class="twitch">
+        <article href="https://www.twitch.tv/dkhmwargames" target="_blank" title="Accede a Twitch" class="twitch">
           <header>
               <h5>Síguenos en nuestro canal de twitch</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </header>
           <section>
             <a href="" title="">Click aquí</a>
