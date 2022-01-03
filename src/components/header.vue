@@ -185,11 +185,11 @@ header > input{
     line-height: 34px;
 }
 .categories > li > a:hover{
-    background-color:#505cfd;
+    background-color:#404044;
     color:#ffffff;
 }
 .categories > li > a.router-link-active{
-    background-color:#505cfd;
+    background-color:#404044;
     color:#ffffff;
 }
 @media (min-width:768px){
