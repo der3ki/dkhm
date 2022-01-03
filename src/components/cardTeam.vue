@@ -48,8 +48,9 @@ export default {
 <style scoped>
     img{
         display: block;
-        width: 100%;
+        width: 220px;
         height: 220px;
+        margin:0 auto;
     }
     .card{
        display:flex;
@@ -104,10 +105,13 @@ export default {
          .card__element_empty{
             width:100%;
          }
-         img{
+    }
+    @media (min-width: 992px) {
+        img{
              margin:0 auto;
              height:auto;
-             width:355px
+             width:355px;
+
          }
     }
 </style>
