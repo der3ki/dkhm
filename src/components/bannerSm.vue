@@ -93,10 +93,10 @@ export default {
       border-radius:25px;
     }
     .patreon{
-      background-image:url('https://technext.github.io/docmed/img/banner/emergency-1.png');
+      background-image:url('https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/patreon_bg.png?alt=media&token=7a930d67-4e9f-4d2c-bb2c-7c193a07625a');
     }
     .twitch{
-      background-image:url('https://technext.github.io/docmed/img/banner/emergency-1.png');
+      background-image:url('https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/twitch_bg.png?alt=media&token=3d7108fc-113e-406e-a231-ff9b41865bc6');
     }
     @media(min-width:768px){
         .banner_sm{
