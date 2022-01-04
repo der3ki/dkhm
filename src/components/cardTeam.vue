@@ -48,8 +48,9 @@ export default {
 <style scoped>
     img{
         display: block;
-        width: 100%;
+        width: 220px;
         height: 220px;
+        margin:0 auto;
     }
     .card{
        display:flex;
@@ -94,17 +95,23 @@ export default {
     .card__element__armies{
         text-align: left;
         padding:10px;
+        font-size:14px;
     }
    @media (min-width: 601px) {
         .card__element{
-            width:calc(25% - 40px);
+            width:calc(33% - 40px);
             margin:0 20px;
         }
          .card__element_empty{
             width:100%;
-        }
+         }
+    }
+    @media (min-width: 992px) {
         img{
-            height:350px;
-        }
+             margin:0 auto;
+             height:auto;
+             width:355px;
+
+         }
     }
 </style>

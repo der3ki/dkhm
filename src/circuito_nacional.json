@@ -4,13 +4,13 @@
             "title":"Bilbohammer",
             "formato": "Torneo individual",
             "ubicaciones":"Bilbao",
-            "Fecha": "27/11/21"
+            "Fecha": "27/11/2021"
         },
         {
             "title":"Alea",
             "formato": "Torneo individual",
             "ubicaciones":"Lleida",
-            "Fecha": "04/12/21"
+            "Fecha": "04/12/2021"
         },
         {
             "title":"Goblin Trader",
@@ -22,7 +22,7 @@
             "title":"Kingdom Wargames",
             "formato": "Torneo individual",
             "ubicaciones":"Madrid",
-            "Fecha": "29/01/22"
+            "Fecha": "29/01/2022"
         },
         {
             "title":"La fortaleza",
@@ -30,6 +30,13 @@
             "ubicaciones":"A Coruña.",
             "Fecha": "05/02/2022",
             "mail":"Fer.cranes@gmail.com"
+        },
+        {
+            "title":"La Batalla por Valentia",
+            "formato": "Torneo individual",
+            "ubicaciones":"Valencia",
+            "Fecha": "20/02/2022",
+            "mail":"ListasAoSValencia@gmail.com"
         },
         {
             "title":"Zamora",
@@ -41,15 +48,15 @@
             "title":"Freakfactory",
             "formato": "Torneo individual",
             "ubicaciones":"Málaga/Fuengirola ",
-            "Fecha": "26/02/2021",
+            "Fecha": "26/02/2022",
             "mail":"clubfreakfactory@gmail.com"
         },
         {
-            "title":"La Batalla por Valentia",
+            "title":"ODISEA GAMES",
             "formato": "Torneo individual",
-            "ubicaciones":"Valencia",
-            "Fecha": "20/02/2022",
-            "mail":"ListasAoSValencia@gmail.com"
+            "ubicaciones":"Zaragoza",
+            "Fecha": "26/02/2022",
+            "mail":"clubfreakfactory@gmail.com"
         },
         {
             "title":"Mono Araña",
@@ -61,13 +68,14 @@
             "title":"Vientos de Magia",
             "formato": "Torneo individual",
             "ubicaciones":"Conil - Cádiz",
-            "Fecha": "03/04/22"
+            "Fecha": "03/04/2022",
+            "mail":"peterthemaster@msn.com"
         },
         {
             "title":"Quimera",
             "formato": "Torneo individual",
             "ubicaciones":"Conil - Cádiz",
-            "Fecha": "23/04/22 - 24/04/2022"
+            "Fecha": "23/04/2022 - 24/04/2022"
         },
         {
             "title":"Pucela Wargames",
@@ -79,7 +87,8 @@
             "title":"Ordo Navarrorum",
             "formato": "Torneo individual",
             "ubicaciones":"Pamplona (Navarra)  ",
-            "Fecha": "04/06/2022"
+            "Fecha": "04/06/2022",
+            "mail":"actividades@ordonavarrorum.com"
         },
         {
             "title":"La Mazmorra de Málaga (Mazmorra wargames)",
@@ -106,7 +115,7 @@
             "title":"Freakfactory Gt",
             "formato": "Torneo por equipos",
             "ubicaciones":"Málaga/Fuengirola",
-            "Fecha": "20/11/2021 y 21/11/2021",
+            "Fecha": "20/11/2021 - 21/11/2021",
             "mail":"clubfreakfactory@gmail.com"
         },
         {

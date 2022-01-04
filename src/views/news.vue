@@ -8,14 +8,14 @@
               <img :src="news.img" :alt="news.title"/>
               <div>
                 
-                <h2> {{new Date(news.createdat).getDate()}} - {{ new Date(news.createdat).getMonth()+1 }} - {{ new Date(news.createdat).getFullYear()}} </h2>
+                <h2> {{new Date(news.createdat).getDate() >= 9 ? new Date(news.createdat).getDate() : '0'+new Date(news.createdat).getDate()}} - {{ new Date(news.createdat).getMonth()+1 >= 10 ? new Date(news.createdat).getMonth()+1 : '0'+(new Date(news.createdat).getMonth()+1)}} - {{ new Date(news.createdat).getFullYear()}} </h2>
                 <h3> {{ news.title }}</h3>
                 <p> {{ news. description}}</p>
               </div>
             </router-link>
           </li>
       </ul>
-      <button @click="loadMoreNews()"> Mostrar más </button>
+      <!-- <button @click="loadMoreNews()"> Mostrar más </button> -->
     </div>
   </section>
 </template>
@@ -92,12 +92,13 @@ export default {
     text-align:left;
   }
   h2{
-    margin: 50px 0 15px;
+    margin: 15px 0;
     font-size:10px;
   }
   h3{
     margin: 20px 0;
     font-size:20px;
+    min-height: 72px;
   }
   p{
     margin:20px 0;
@@ -107,6 +108,11 @@ export default {
     li{
       max-width:350px;
       margin: 0 30px 30px;
+    }
+  }
+  @media(min-width:992px){
+    img{
+      height: 262px;
     }
   }
 </style>
