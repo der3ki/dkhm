@@ -74,7 +74,9 @@ export default {
     }
     h4{
         font-size:16px;
-        margin:15px 0;
+        padding: 10px;
+        margin: 10px 0;
+        background: #e5e5e5;
     }
     #container__cards, .input{
         position: fixed;
@@ -161,7 +163,7 @@ export default {
         opacity: 1;
         -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=1);
         filter: alpha(opacity=1);
-        padding:30px 0;
+        margin-bottom: 10px;
     }
     .container_palmares__header{
         background-color:#404044;
@@ -206,11 +208,9 @@ export default {
     .container__palmares__label{
         padding:10px;
         cursor:pointer;
+        display: inline-block;
     }
     @media(min-width:768px){
-        h4{
-            margin-top:0;
-        }
         .container{
             min-height: 600px;
         }
