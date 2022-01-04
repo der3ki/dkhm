@@ -20,7 +20,7 @@ const routes = [
     { path:'/news/:id', props: true, component:ActualNews, name:'ActualNews'},
     { path: '/factions', name: 'Factions', component: Factions },
     { path:'/faction/:name', props: true, component:faction, name:'faction'},
-    { path: '/background', name: 'Background', component: Background },
+    { path: '/trasfondo', name: 'Background', component: Background },
     { path: '/team', name: 'Team', component: Team },
     { path: '/sponsors', name: 'Sponsors', component: Sponsors },
     { path: '/circuito_nacional', name: 'CircuitoNacional', component: circuitoNacional },
