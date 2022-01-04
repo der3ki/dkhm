@@ -52,6 +52,7 @@ export default {
   .background > div{
     max-width: 1200px;
     margin:0 auto;
+    text-align: justify;
   }
   iframe{
     width:100%;
@@ -74,7 +75,6 @@ export default {
     color:#ffffff;
   }
   a{
-    color:#ffffff;
     text-decoration: none;
     font:500 14px/1 'Poppins',sans-serif
   }
