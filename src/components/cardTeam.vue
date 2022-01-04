@@ -110,8 +110,7 @@ export default {
         img{
              margin:0 auto;
              height:auto;
-             width:355px;
-
+             width:100%;
          }
     }
 </style>
