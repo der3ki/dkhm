@@ -23,14 +23,11 @@
         ></iframe>
         <h3>Consulta nuestras listas de trasfondo de Age of Sigmar</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-          hendrerit urna nec dui hendrerit, vitae porta lorem pharetra. Etiam eu
-          lacinia mi. Nam ante est, commodo ut iaculis sit amet, consectetur vel
-          purus. Duis a velit laoreet, volutpat nibh ac, hendrerit ante. In
-          auctor sit amet lorem ac feugiat. Proin ornare ligula massa, nec
-          faucibus lacus tempus ut. In posuere orci elementum ex commodo, a
-          suscipit ipsum ullamcorper. Nulla pharetra enim a nibh venenatis
-          aliquet.
+          Si te gustan los podcast o los vídeos de trasfondo de Age of Sigmar, desde DKHM hemos preparado un listado de vídeos especialmente para ti.
+          Siente el lore desde las facciones de los ejércitos hasta las historias más épicas de BROKEN REALMS.
+        </p>
+        <p>
+          También puedes escuchar nuestras charlas con diferentes puntos de vista en nuestro DKHM Café
         </p>
       </div>
     </div>
