@@ -150,8 +150,11 @@ export default {
   }
   @media (min-width:992px){
     .news_home > article > section > ul > li{
+
       width: calc(50% - 10px);
       min-height: 415px;
+    .news_home > article > section > ul > li > img{
+      height: 28vh;
     }
   }
 </style>

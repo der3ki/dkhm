@@ -17,8 +17,8 @@
             "description":"this is the description of factions"
         },
         {
-            "name":"background",
-            "url": "/background",
+            "name":"trasfondo",
+            "url": "/trasfondo",
             "img_mobile":"https://picsum.photos/280/250",
             "img_desktop":"https://picsum.photos/600/450",
             "title":"this is background",

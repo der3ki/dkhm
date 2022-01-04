@@ -1,6 +1,5 @@
 <template>
     <div class="container">
-        <h2>Equipo</h2>
         <p class="container__description">{{getTeam.description}}</p>
         <div class="container__cards">
             <input type="checkbox" id="container__cards" class="input" checked/>
@@ -75,7 +74,7 @@ export default {
     }
     h4{
         font-size:16px;
-        margin-top:50px;
+        margin:15px 0;
     }
     #container__cards, .input{
         position: fixed;
