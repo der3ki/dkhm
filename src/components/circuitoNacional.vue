@@ -18,7 +18,7 @@
                     <p class="list__item">{{gt.ubicaciones}}</p>
                     <p class="list__item">{{gt.Fecha}}</p>
                     <p class="list__item" v-if="gt.mail">
-                      Enviar correo a la sede <a :href="'mailto:'+gt.mail" title="Enviar correo a la sede" target="_blank">aquí</a>
+                      Enviar correo <a :href="'mailto:'+gt.mail" title="Enviar correo a la sede" target="_blank">aquí</a>
                     </p>
                   </div>
                 </li>
@@ -33,7 +33,7 @@
                     <p class="list__item">{{gt.ubicaciones}}</p>
                     <p class="list__item">{{gt.Fecha}}</p>
                     <p class="list__item" v-if="gt.mail">
-                      Enviar correo a la sede <a :href="'mailto:'+gt.mail" title="Enviar correo a la sede" target="_blank">aquí</a>
+                      Enviar correo <a :href="'mailto:'+gt.mail" title="Enviar correo a la sede" target="_blank">aquí</a>
                     </p>
                   </div>
                 </li>
