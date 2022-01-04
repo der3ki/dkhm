@@ -66,12 +66,12 @@ export default {
         font: 500 24px/1.5 'Poppins',sans-serif;
         color:#404044;
         margin:15px 0;
-        text-align: left;
+        text-align: center;
     }
     .about_dkhm > div > article > section > div > p{
         font: 400 14px/2.14286 "Montserrat", serif;
         color:#888888;
-        text-align: left;
+        text-align: justify;
     }
     .about_dkhm > div > article > section > div > a{
         display: inline-block;
@@ -95,6 +95,9 @@ export default {
         color: #ffffff;
         background-color: #ff0000;
         border-color: #ff0000;
+    }
+    .about_dkhm > div > article > section > div{
+      text-align: right;
     }
     @media(min-width:768px){
         .about_dkhm > div > article{
@@ -143,7 +146,7 @@ export default {
         }
         .about_dkhm > div > article > section > div > h1:after{
             content: '';
-            left: -140px;
+            left: 0;
             bottom: 0;
             background: red;
             display: block;

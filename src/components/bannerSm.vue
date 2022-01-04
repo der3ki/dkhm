@@ -39,7 +39,7 @@ export default {
       align-items: center;
     }
     .banner_sm > article{
-      padding:40px 20px;
+      padding:40px 20px 40px 50%;
       width:100%;
       box-sizing: border-box;
       position: relative;
@@ -70,6 +70,7 @@ export default {
     .banner_sm > article > header, .banner_sm > article > section{
       max-width: 320px;
       margin:0 auto;
+      text-align: center;
     }
     .banner_sm > article > header > h5{
       margin-top:0;
@@ -103,17 +104,23 @@ export default {
           flex-direction:row;
           align-items: flex-start;
         }
+        .banner_sm > article{
+          padding:40px 20px 40px 25%;
+        }
         .banner_sm > article > header{
           max-width: 500px;
+        }
+        .banner_sm > article > header > h5{
+          font-size:18px;
         }
     }
     @media(min-width:992px){
       .banner_sm > article{
         display:flex;
-        flex-direction:row;
+        flex-direction:column;
         justify-content: center;
         align-items: center;
-        padding: 91px 0;
+        padding: 90px 20px 90px 25%;
         background-position: center;
       }
       .banner_sm > article > header, .banner_sm > article > section{

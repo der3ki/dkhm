@@ -6,9 +6,6 @@
                     <img src="../assets/logo.png" alt="DKHM"/>
                     <figcaption>wargames</figcaption>
                 </figure>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
                 <ul>
                     <li>
                         <a href="https://www.facebook.com/DKHMwargames/" target="_blank" title="Facebook">
