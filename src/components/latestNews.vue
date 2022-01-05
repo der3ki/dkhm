@@ -2,8 +2,8 @@
     <div :class="this.home ? 'news_home home':'news_home'">
       <article>
         <header>
-          <h2>Notícias destacadas</h2>
-          <h3>En esta sección podrás ver las últimas notícias y estar al día de la nueva edición de Age of sigmar</h3>
+          <h2>Noticias destacadas</h2>
+          <h3>En esta sección podrás ver las últimas noticias y estar al día de la nueva edición de Age of Sigmar</h3>
         </header>
         <section>
           <ul>
