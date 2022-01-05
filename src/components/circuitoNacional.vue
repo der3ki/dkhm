@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="circuitoNacional">
         <div class="container">
             <h2>Circuito Nacional</h2>
               <p class="container__description">
@@ -56,19 +56,14 @@ export default {
 </script>
 
 <style scoped>
-  ul > li:last-of-type{
-    border-bottom:1px solid #ff0000;
+  .circuitoNacional{
+    position: relative;
+    overflow: hidden;
   }
   .container{
     margin: 0 auto;
     max-width: 1200px;
-    padding: 20px;
-  }
-  .placement:first-of-type{
-    border-bottom:none;
-  }
-  .placement{
-    border-top:1px solid #ff0000;
+    padding: 20px 15px;
   }
   .list{
     display:flex;
@@ -79,4 +74,54 @@ export default {
   .list__item{
     width:25%;
   }
+  .container_palmares__header{
+    background-color:#404044;
+    color:#ffffff;
+    text-align:left;
+  }
+  .container_gt{
+    margin:50px 0;
+    position: relative;
+    overflow-x: scroll;
+  }
+  .container__palmares_positions{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        border-bottom:1px solid #404044;
+        text-align:left;
+        padding: 10px;
+        font:300 16px/1.5 'Poppins',sans-serif;
+        min-width:450px;
+        margin: 0 auto;
+
+    }
+    .container__palmares_positions div{
+        width: 25%;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: left;
+        word-break: break-word;
+        font-size:13px;
+    }
+    @media(min-width:768px){
+      .container_gt{
+        overflow-x: hidden;
+      }
+      .container__palmares_positions{
+        max-width: 600px;
+        width: 100%;
+        border-left:1px solid #404044;
+        border-right: 1px solid #404044;
+      }
+      .container__palmares_positions div{
+        font-size:14px;
+      }
+    }
+    @media(min-width: 1024px){
+      .container__palmares_positions{
+        max-width: 800px;
+      }
+    }
 </style>

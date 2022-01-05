@@ -1,21 +1,19 @@
 <template>
     <div class="banner_sm">
-        <article href="#" title="Patreon" class="patreon">
+        <article class="patreon">
           <header>
               <h5>Haz una donación al canal con patreon</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </header>
           <section>
-            <a href="" title="">Click aquí</a>
+            <a href="https://www.patreon.com/dkhm" target="_blank" title="Accede a Patreon" >Click aquí</a>
           </section>
         </article>
-        <article href="#" title="Patreon" class="twitch">
+        <article class="twitch">
           <header>
               <h5>Síguenos en nuestro canal de twitch</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </header>
           <section>
-            <a href="" title="">Click aquí</a>
+            <a href="https://www.twitch.tv/dkhmwargames" target="_blank" title="Accede a Twitch" >Click aquí</a>
           </section>
         </article>
     </div>
@@ -41,7 +39,7 @@ export default {
       align-items: center;
     }
     .banner_sm > article{
-      padding:40px 20px;
+      padding:40px 20px 40px 50%;
       width:100%;
       box-sizing: border-box;
       position: relative;
@@ -72,6 +70,7 @@ export default {
     .banner_sm > article > header, .banner_sm > article > section{
       max-width: 320px;
       margin:0 auto;
+      text-align: center;
     }
     .banner_sm > article > header > h5{
       margin-top:0;
@@ -95,27 +94,33 @@ export default {
       border-radius:25px;
     }
     .patreon{
-      background-image:url('https://technext.github.io/docmed/img/banner/emergency-1.png');
+      background-image:url('https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/patreon_bg.png?alt=media&token=7a930d67-4e9f-4d2c-bb2c-7c193a07625a');
     }
     .twitch{
-      background-image:url('https://technext.github.io/docmed/img/banner/emergency-1.png');
+      background-image:url('https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/twitch_bg.png?alt=media&token=3d7108fc-113e-406e-a231-ff9b41865bc6');
     }
     @media(min-width:768px){
         .banner_sm{
           flex-direction:row;
           align-items: flex-start;
         }
+        .banner_sm > article{
+          padding:40px 20px 40px 25%;
+        }
         .banner_sm > article > header{
           max-width: 500px;
+        }
+        .banner_sm > article > header > h5{
+          font-size:18px;
         }
     }
     @media(min-width:992px){
       .banner_sm > article{
         display:flex;
-        flex-direction:row;
+        flex-direction:column;
         justify-content: center;
         align-items: center;
-        padding: 91px 0;
+        padding: 90px 20px 90px 25%;
         background-position: center;
       }
       .banner_sm > article > header, .banner_sm > article > section{
