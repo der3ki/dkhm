@@ -1,7 +1,7 @@
 <template>
   <div id="app" :class="this.$route.name">
     <Header></Header>
-    <div v-if="loading" class="container__lds-hourglass">
+    <div v-if="loader" class="container__lds-hourglass">
       <div class="lds-hourglass"/>
     </div>
     <div v-else>
@@ -22,11 +22,6 @@ export default {
     Header,
     Footer
   },
-  data(){
-    return{
-      loading:true,
-    }
-  },
   mounted(){
     Promise.all([
       this.$store.dispatch("getAllNews",{limit:3,from:0}),
@@ -34,9 +29,14 @@ export default {
       this.$store.dispatch("getAllFactions"),
       this.$store.dispatch("getTeam",{limit:20,from:0}),
       this.$store.dispatch("getArmies")
-      ]).then(() => (this.loading = false))
+      ]).then()
   },
   created(){
+  },
+  computed:{
+    loader(){
+      return this.$store.getters.getLoader;
+    }
   }
 }
 </script>
