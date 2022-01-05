@@ -1,9 +1,9 @@
 <template>
     <div class="container">
-        <p class="container__description">{{getTeam.description}}</p>
+        <h2 class="container__description">{{getTeam.description}}</h2>
         <div class="container__cards">
             <input type="checkbox" id="container__cards" class="input" checked/>
-            <h3>Para ver más miembros del equipo, haz click <label for="container__cards"> aquí</label></h3>
+            <!-- <h3>Para ver más miembros del equipo, haz click <label for="container__cards"> aquí</label></h3> -->
             <cardTeam :players="players" class="container_players"/>
         </div>
         <h2>Palmarés del equipo</h2>
@@ -68,6 +68,7 @@ export default {
 <style scoped>
     h2{
         font-weight: 800;
+        margin-top: 50px;
     }
     h3{
         font:500 16px/1.5 'Poppins',sans-serif;
@@ -87,9 +88,6 @@ export default {
         margin:0 auto;
         max-width: 1200px;
         padding:0 15px;
-    }
-    .container__description{
-        font-size:18px
     }
     .container_players{
         height: 0;
