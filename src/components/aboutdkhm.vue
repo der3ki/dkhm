@@ -17,7 +17,7 @@
                         <p>
                             Así que... nada, un saludo, y nos vemos de nuevo en DKHM.
                         </p>
-                        <router-link to="/team" title="Leer más">
+                        <router-link to="/equipo" title="Leer más">
                             Leer más
                         </router-link>
                     </div>
