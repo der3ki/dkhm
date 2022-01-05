@@ -58,15 +58,43 @@ ul > li {
   padding: 50px 0;
   background-size: cover;
   background-position: center center;
+  position: relative;
+}
+ul > li:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background:#000000;
+}
+ul > li > div{
+  z-index: 2;
+  position: relative;
 }
 a {
-  color: #ffffff;
-  text-decoration: none;
+    text-decoration: none;
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    color: #ffffff;
+    border-radius: 25px;
   font: 500 14px/1 "Poppins", sans-serif;
 }
 @media (min-width: 601px) {
   ul {
     flex-direction: row;
+  }
+}
+@media(min-width:768px){
+  p{
+    font-size: 18px;
   }
 }
 </style>

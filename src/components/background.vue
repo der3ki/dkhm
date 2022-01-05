@@ -3,16 +3,15 @@
     <div>
       <div>
         <p>
-          Este es nuestra biblioteca, nuestra "Sigmaroteca", donde podrás encontrar el trasfondo y cronología de Age of Sigmar y de todas las facciones que luchan por sus metas en los 8 Reinos Mortales.
+          Este es nuestra biblioteca, o mejor dicho la "Sigmaroteca", donde podrás encontrar el trasfondo y cronología de Age of Sigmar así como de todas las facciones que luchan por sus metas en los 8 Reinos Mortales.
         </p>
         <p>
-          Puedes consultar la sigmaroteca, haciendo click
+          Puedes consultar la sigmaroteca, <b>haciendo click
           <a
             href="https://ageofsigmar.fandom.com/es/wiki/Sigmaroteca"
             target="_blank"
             title="Sigmaroteca"
-            >aquí</a
-          >
+            > aquí</a> </b>
         </p>
         <iframe
           src="https://www.youtube.com/embed/XFGDe7rLctc"
@@ -52,6 +51,7 @@ export default {
   .background > div{
     max-width: 1200px;
     margin:0 auto;
+    text-align: justify;
   }
   iframe{
     width:100%;
@@ -74,9 +74,9 @@ export default {
     color:#ffffff;
   }
   a{
-    color:#ffffff;
     text-decoration: none;
-    font:500 14px/1 'Poppins',sans-serif
+    font:700 16px/1.5 'Poppins',sans-serif;
+    color:blue;
   }
   @media(min-width:768px){
     ul{
