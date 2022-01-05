@@ -6,6 +6,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    loader:true,
     latestNews:[],
     allNews:[],
     factions:{},
@@ -51,6 +52,9 @@ export default new Vuex.Store({
     },
     setArmies(state,armies){
       state.armies = armies.armies
+    },
+    setLoader(state,loader){
+        state.loader = loader
     }
   },
   getters:{
@@ -70,7 +74,8 @@ export default new Vuex.Store({
     getBrokenRealms : (state) => state.background.broken_realms,
     getDkhmCoffe: (state) => state.background.dkhm_coffe,
     getTeam: (state) => state.team,
-    getArmies: (state) => state.armies 
+    getArmies: (state) => state.armies,
+    getLoader: (state) => state.loader
   },
   actions: {
     async getLatestNews({ commit }) {
@@ -134,6 +139,7 @@ export default new Vuex.Store({
           .get("https://dkhm-api.herokuapp.com/api/armies/getArmies")
           .then((response) => {
               commit("setArmies", response.data);
+              commit("setLoader",false)
           });
     }
   },
