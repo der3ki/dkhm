@@ -86,6 +86,9 @@
                     </li>
                 </ul>
             </div>
+            <div class="subfactions faction_prop">
+                <p>Este faction focus ha sido realizado por: {{getFactionByName.author}}, el día {{new Date(this.getFactionByName.createdat).getDate()+"/"+new Date(this.getFactionByName.createdat).getMonth()+1+"/"+new Date(this.getFactionByName.createdat).getFullYear()}}</p>
+            </div>
        </div>
     </div>
 </template>
