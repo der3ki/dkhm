@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="this.$route.name">
     <Header></Header>
     <div v-if="loading" class="container__lds-hourglass">
       <div class="lds-hourglass"/>
