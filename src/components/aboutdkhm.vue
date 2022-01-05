@@ -9,13 +9,13 @@
                     <div>
                         <h1>DKHM Wargames</h1>
                         <p>
-                            Estrenamos web dkhmita para ampliar horizontes e intentar manter informada a la comunidad no solo de nuestro último contenido en YouTube y Twitch, sino para traeros info de torneos, análisis de facción, que se irán actualizando, para poder leer con calma, info de nuestro equipo, noticias... Y todo aquello cuanto tenga cabida en nuestros Reinos Mortales.
+                            Estrenamos web Dkhmita para ampliar horizontes y mantener informada a la comunidad. No solo lo haremos de nuestro último contenido en YouTube y Twitch, sino que también os traeremos info de torneos, análisis de facción, etc. que iremos actualizando junto con info de nuestro equipo, noticias... Y todo aquello cuanto tenga cabida en nuestros Reinos Mortales.
                         </p>
                         <p>
-                            Esperemos que disfrutéis está aventura que comenzamos aquí, y no perdáis de vista a la web ya que irá mejorando y ampliándose poco a poco.
+                            Esperemos que disfrutéis está aventura que comenzamos aquí y no perdáis de vista la web, ya que irá mejorando y ampliándose poco a poco.
                         </p>
                         <p>
-                            Así que... nada... Un saludo, y nos vemos de nuevo en Dkhm.
+                            Así que... nada, un saludo, y nos vemos de nuevo en DKHM.
                         </p>
                         <router-link to="/team" title="Leer más">
                             Leer más
