@@ -1,7 +1,7 @@
 <template>
     <div class="faction_focus" v-if="allFactions">
         <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut augue aliquam, sodales purus nec, interdum leo. Mauris ultricies cursus orci quis pellentesque. Donec dictum elit ac egestas blandit. Duis vel risus pellentesque, ultricies lacus sit amet, rutrum lacus. Vestibulum maximus, velit ultricies convallis facilisis, magna lorem dignissim massa, faucibus bibendum dolor odio non odio. Nullam lobortis orci lorem, eu interdum arcu varius at.</p>
+            <p>Esta es la sección de los faction focus de cada ejército, podrás encontrar una descripción general sobre cómo es el ejército y conocer algunos trucos sobre él.</p>
             <ul class="grand_Alliances">
                 <li>
                     <input type="checkbox" id="order" class="input"/>
@@ -110,6 +110,10 @@ export default {
     font-family: "SkateBrand";
     src: local("SkateBrand"),
     url('../assets/fonts/Skate_Brand.otf') format("truetype");
+    }
+    p{
+        max-width: 600px;
+        margin:0 auto;
     }
     .faction_focus{
         padding: 25px 15px;
