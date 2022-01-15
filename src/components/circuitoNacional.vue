@@ -5,7 +5,7 @@
             Este proyecto no habría sido posible sin la colaboración cómo esta. Una comunidad en la que tú, que lees esto, eres una pieza imprescindible de su motor. Gracias por todo tu apoyo
           </p>
           <p class="container__description">
-            En esta sección podrás encontrar toda la información oficial sobre el torneo, para verlo, haz click <a href="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/GT_ESP-1.pdf?alt=media&token=4c5ea018-9c96-4129-b3e7-0592951bf662" title="Ver las bases, haciendo click aquí" target="_blank">aquí</a>
+            En esta sección podrás encontrar toda la información oficial sobre el torneo, para verlo, haz click <a href="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/GT_ESP_FINAL_.pdf?alt=media&token=d8da7979-891d-4cf8-9567-f45f83415c27" title="Ver las bases, haciendo click aquí" target="_blank">aquí</a>
           </p>
           <ul class="container_gt">
             <li>
