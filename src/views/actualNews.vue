@@ -93,6 +93,9 @@ p.outstanding:after, .news_detail >>> p.outstanding:after{
 .news_detail >>> ul{
   margin:20px 0;
 }
+.news_detail >>> li{
+  margin:10px 0;
+}
 .news_detail >>> p{
   font-weight: 500;
   font-size:14px;

@@ -92,6 +92,9 @@ li {
   box-sizing: border-box;
   margin: 15px 0;
 }
+li:empty{
+  display:none;
+}
 img {
   display: block;
   width: 100%;
