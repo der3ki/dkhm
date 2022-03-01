@@ -31,7 +31,7 @@
           </router-link>
         </li>
       </ul>
-      <!-- <button @click="loadMoreNews()"> Mostrar más </button> -->
+      <button @click="loadMoreNews()"> Mostrar más </button>
     </div>
   </section>
 </template>
@@ -71,6 +71,7 @@ export default {
 <style scoped>
 .news {
   padding: 60px 20px;
+  text-align: center;
 }
 ul {
   display: flex;
@@ -126,6 +127,14 @@ h3 {
 p {
   margin: 20px 0;
   font-size: 13px;
+}
+button{
+  background: #404044;
+  color: #ffffff;
+  font: 300 16px/1.5 'Poppins',sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor:pointer;
 }
 @media (min-width: 768px) {
   li {
