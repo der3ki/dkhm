@@ -4,7 +4,7 @@
     <Banner v-else :home="false" title="Noticías" image="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/ageofsigmarmural.png?alt=media&token=fce2ebad-b15d-4aa7-bfe0-07a1f21c6f53"></Banner>
     <div class="news_detail">
       <div v-if="this.getNewsById">
-        <img :src="this.getNewsById.img" :alt="this.getNewsById.title"/>
+        <div class="news_detail__img" :style="{ backgroundImage: 'url(' + this.getNewsById.img + ')' }"/>
         <h2>{{new Date(this.getNewsById.createdat).getDate() >= 9 ? new Date(this.getNewsById.createdat).getDate() : '0'+ new Date(this.getNewsById.createdat).getDate()}}/{{ new Date(this.getNewsById.createdat).getMonth()+1 >= 9 ? new Date(this.getNewsById.createdat).getMonth()+1 : '0'+(new Date(this.getNewsById.createdat).getMonth()+1)}}/{{ new Date(this.getNewsById.createdat).getFullYear()}}</h2>
         <h3>{{this.getNewsById.description}}</h3>
         <p v-if="this.getNewsById.outstanding" class="outstanding">{{this.getNewsById.outstanding}}</p>
@@ -53,6 +53,12 @@ h2,h3,p{
   font: 500 16px/20px 'Poppins',sans-serif;
   color:#3a3636;
   text-align: left;
+}
+.news_detail__img{
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  height:450px;
 }
 h2{
   font-size:18px;
@@ -113,6 +119,9 @@ p.outstanding:after, .news_detail >>> p.outstanding:after{
       max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+  }
+  .news_detail__img{
+    height:600px;
   }
   p.outstanding, .news_detail >>> p.outstanding{
     padding:15px 0;
