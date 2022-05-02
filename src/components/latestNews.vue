@@ -150,7 +150,7 @@ export default {
   }
   @media (min-width:992px){
     .news_home > article > section > ul > li{
-      width: calc(50% - 10px);
+      width: calc(33% - 30px);
       min-height: 415px;
     }
     .news_home > article > section > ul > li > img{
