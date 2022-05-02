@@ -79,12 +79,6 @@
             "Fecha": "23/04/2022 - 24/04/2022"
         },
         {
-            "title":"Pucela Wargames",
-            "formato": "Torneo individual",
-            "ubicaciones":"Valladolid ",
-            "Fecha": "21/05/2022"
-        },
-        {
             "title":"Ordo Navarrorum",
             "formato": "Torneo individual",
             "ubicaciones":"Pamplona (Navarra)  ",
@@ -99,10 +93,17 @@
             "Fecha": "24/07/2022"
         },
         {
+            "title":"",
+            "formato": "Torneo individual",
+            "ubicaciones":"Málaga",
+            "mail": "hombrebestia@hotmail.com",
+            "Fecha": "24/07/2022"
+        },
+        {
             "title":"Kingdom Wargames",
             "formato": "Torneo individual - FINAL",
             "ubicaciones":"Madrid ",
-            "Fecha": "Septiembre"
+            "Fecha": "Segundo finde de Octubre"
         }
     ],
     "circuito_equipos":[
@@ -145,6 +146,12 @@
             "ubicaciones":"Gijón",
             "Fecha": "14/05/2022 - 15/05/2022",
             "url":"ravnicagobbo@gmail.com"
+        },
+        {
+            "title":"Kingdom Wargames",
+            "formato": "Torneo por equipos - FINAL",
+            "ubicaciones":"Madrid ",
+            "Fecha": "Primer o segundo finde de noviembre"
         }
     ]
     
