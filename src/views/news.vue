@@ -136,6 +136,9 @@ button{
   box-sizing: border-box;
   cursor:pointer;
 }
+p.light{
+  font-weight: 300;
+}
 @media (min-width: 768px) {
   li {
     max-width: 350px;
