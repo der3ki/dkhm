@@ -8,7 +8,7 @@
             En esta sección podrás encontrar toda la información oficial sobre el torneo, para verlo, haz click <a href="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/GT_ESP_FINAL_.pdf?alt=media&token=d8da7979-891d-4cf8-9567-f45f83415c27" title="Ver las bases, haciendo click aquí" target="_blank">aquí</a>
           </p>
            <p class="container__description">
-            Atención!! Puedes encontrar las bases para el segundo circuito nacional, para verlo, haz click <a href="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/BASES%20CND2%20V1.1.pdf?alt=media&token=f31df0eb-6f20-46a4-80ad-3580e1b9c591" title="Ver las bases, haciendo click aquí" target="_blank">aquí</a>
+            <b>Atención!! Puedes encontrar las bases para el segundo circuito nacional, para verlo, haz click <a href="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/BASES%20CND2%20V1.1.pdf?alt=media&token=f31df0eb-6f20-46a4-80ad-3580e1b9c591" title="Ver las bases, haciendo click aquí" target="_blank">aquí</a></b>
           </p>
           <ul class="container_gt">
             <li>
