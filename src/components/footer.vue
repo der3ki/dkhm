@@ -171,12 +171,9 @@ export default {
             margin-left:50px;
         }
     .Download footer{
-            background: #1f1f1f;
+         background: #1f1f1f;
         padding: 20px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
+       
         }
     }
 </style>
