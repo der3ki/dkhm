@@ -16,6 +16,11 @@
                         <li>
                             <p>Reglas para escenografía, para descargar haz click <a href="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/tokens%20sceno_web.pdf?alt=media&token=70d8ea40-d4fe-4d52-a032-eb29576cf950" target="_blank" title="Tabla de puntuación">aquí</a></p>
                         </li>
+                        <li>
+                            <p>
+                                <b>Atención!!</b> Puedes encontrar las bases para el segundo circuito nacional, para verlo, haz click <a href="https://firebasestorage.googleapis.com/v0/b/dkhm-862c9.appspot.com/o/BASES%20CND2%20V1.1.pdf?alt=media&token=f31df0eb-6f20-46a4-80ad-3580e1b9c591" title="Ver las bases, haciendo click aquí" target="_blank"><b>aquí</b></a>
+                            </p>
+                        </li>
                     </ul>
                 </section>
             </article>
